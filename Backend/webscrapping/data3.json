@@ -1,0 +1,1258 @@
+{
+    "dataResponse": [
+        {
+            "dataSubset": [
+                {
+                    "dataset": {
+                        "tableDataset": {
+                            "columnInfo": [
+                                {
+                                    "ns": "t0",
+                                    "name": "qt_v7k9446xgc"
+                                }
+                            ],
+                            "totalCount": 103,
+                            "column": [
+                                {
+                                    "nullIndex": [],
+                                    "stringColumn": {
+                                        "values": [
+                                            "ene. 16",
+                                            "feb. 16",
+                                            "mar. 16",
+                                            "abr. 16",
+                                            "may. 16",
+                                            "jun. 16",
+                                            "jul. 16",
+                                            "ago. 16",
+                                            "sep. 16",
+                                            "oct. 16",
+                                            "nov. 16",
+                                            "dic. 16",
+                                            "ene. 17",
+                                            "feb. 17",
+                                            "mar. 17",
+                                            "abr. 17",
+                                            "may. 17",
+                                            "jun. 17",
+                                            "jul. 17",
+                                            "ago. 17",
+                                            "sep. 17",
+                                            "oct. 17",
+                                            "nov. 17",
+                                            "dic. 17",
+                                            "ene. 18",
+                                            "feb. 18",
+                                            "mar. 18",
+                                            "abr. 18",
+                                            "may. 18",
+                                            "jun. 18",
+                                            "jul. 18",
+                                            "ago. 18",
+                                            "sep. 18",
+                                            "oct. 18",
+                                            "nov. 18",
+                                            "dic. 18",
+                                            "ene. 19",
+                                            "feb. 19",
+                                            "mar. 19",
+                                            "abr. 19",
+                                            "may. 19",
+                                            "jun. 19",
+                                            "jul. 19",
+                                            "ago. 19",
+                                            "sep. 19",
+                                            "oct. 19",
+                                            "nov. 19",
+                                            "dic. 19",
+                                            "ene. 20",
+                                            "feb. 20",
+                                            "mar. 20",
+                                            "abr. 20",
+                                            "may. 20",
+                                            "jun. 20",
+                                            "jul. 20",
+                                            "ago. 20",
+                                            "sep. 20",
+                                            "oct. 20",
+                                            "nov. 20",
+                                            "dic. 20",
+                                            "ene. 21",
+                                            "feb. 21",
+                                            "mar. 21",
+                                            "abr. 21",
+                                            "may. 21",
+                                            "jun. 21",
+                                            "jul. 21",
+                                            "ago. 21",
+                                            "sep. 21",
+                                            "oct. 21",
+                                            "nov. 21",
+                                            "dic. 21",
+                                            "ene. 22",
+                                            "feb. 22",
+                                            "mar 22",
+                                            "abr. 22",
+                                            "may. 22",
+                                            "jun. 22",
+                                            "jul. 22",
+                                            "ago. 22",
+                                            "sep. 22",
+                                            "oct. 22",
+                                            "nov 22",
+                                            "dic. 22",
+                                            "ene. 23",
+                                            "feb. 23",
+                                            "mar. 23",
+                                            "abr. 23",
+                                            "may. 23",
+                                            "jun. 23",
+                                            "jul. 23",
+                                            "ago. 23",
+                                            "sep. 23",
+                                            "oct. 23",
+                                            "nov. 23",
+                                            "dic. 23",
+                                            "ene. 24",
+                                            "feb 24",
+                                            "mar. 24",
+                                            "abr 24",
+                                            "may. 24",
+                                            "jun. 24",
+                                            "jul. 24"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "size": 103,
+                            "metadata": {
+                                "columnMetadata": [
+                                    {
+                                        "imageContainsDynamicData": false
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "requestId": "5117344e-6190957-20240818",
+                    "isCompare": false,
+                    "jobRequestUrl": [],
+                    "isTotals": false,
+                    "viewTags": {
+                        "compareIndex": 0,
+                        "isTotals": false,
+                        "role": "main",
+                        "bypassCanvasFilters": false
+                    },
+                    "biEngineStatistics": {
+                        "biEngineReasons": []
+                    },
+                    "biJobUrl": "https://console.cloud.google.com/bigquery?project\u003dbumex-163220\u0026j\u003dbq:US:job_yMftckyLVPLYZf2kzjSjPUQhcoV5",
+                    "bqCacheHit": true
+                }
+            ],
+            "dataTimestamp": "1724012880289",
+            "responseMetaSet": {
+                "responseMetas": [
+                    {
+                        "requestNamespace": {
+                            "context": 0
+                        },
+                        "bqResponseMeta": {
+                            "biEngineStats": {
+                                "biEngineReasons": []
+                            },
+                            "bqCacheHit": true,
+                            "processingStats": {
+                                "totalBytesProcessed": "0",
+                                "billingExemptBytesProcessed": "0",
+                                "totalBytesBilled": "0",
+                                "billingMultiplier": 1,
+                                "totalSlotMsBilled": "0"
+                            },
+                            "containsLegacyNumericSchema": false,
+                            "numPagesRead": "1",
+                            "numRowsFetched": "103",
+                            "helixResponseSchema": {
+                                "field": [
+                                    {
+                                        "name": "t0___LEGO_COUNT_qt_djn9446xgc",
+                                        "type": 2,
+                                        "mode": 1,
+                                        "tag": 1
+                                    },
+                                    {
+                                        "name": "t0___LEGO_SUM_qt_djn9446xgc",
+                                        "type": 2,
+                                        "mode": 1,
+                                        "tag": 2
+                                    },
+                                    {
+                                        "name": "clmn1_",
+                                        "type": 1,
+                                        "mode": 1,
+                                        "tag": 3
+                                    }
+                                ],
+                                "fieldIdToPolicy": [],
+                                "dataPolicyColumnReferences": []
+                            },
+                            "helixJobStatus": {
+                                "state": 2,
+                                "errorStream": []
+                            },
+                            "rpcStatus": {},
+                            "retriableErrors": [],
+                            "deadlineSecs": 299.809786891,
+                            "jobCreationReason": {
+                                "code": 1
+                            }
+                        },
+                        "origin": 1,
+                        "mappingId": {
+                            "datasourceId": "d37cc422-d708-4174-9c1d-4253dac1dd5a"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "dataSubset": [
+                {
+                    "dataset": {
+                        "tableDataset": {
+                            "columnInfo": [
+                                {
+                                    "ns": "t0",
+                                    "name": "qt_ozl9446xgc"
+                                }
+                            ],
+                            "totalCount": 5,
+                            "column": [
+                                {
+                                    "nullIndex": [],
+                                    "stringColumn": {
+                                        "values": [
+                                            "Puerto Madero",
+                                            "Palermo",
+                                            "Nu\u00f1ez",
+                                            "Belgrano",
+                                            "Caballito"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "size": 5,
+                            "metadata": {
+                                "columnMetadata": [
+                                    {
+                                        "imageContainsDynamicData": false
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "requestId": "27df135a-6190958-20240818",
+                    "isCompare": false,
+                    "jobRequestUrl": [],
+                    "isTotals": false,
+                    "viewTags": {
+                        "compareIndex": 0,
+                        "isTotals": false,
+                        "role": "main",
+                        "bypassCanvasFilters": false
+                    },
+                    "biEngineStatistics": {
+                        "biEngineReasons": []
+                    },
+                    "biJobUrl": "https://console.cloud.google.com/bigquery?project\u003dbumex-163220\u0026j\u003dbq:US:job_Mx5oAo4YcAQU_R9PlXY4BqnoF440",
+                    "bqCacheHit": true
+                }
+            ],
+            "dataTimestamp": "1724012880288",
+            "responseMetaSet": {
+                "responseMetas": [
+                    {
+                        "requestNamespace": {
+                            "context": 0
+                        },
+                        "bqResponseMeta": {
+                            "biEngineStats": {
+                                "biEngineReasons": []
+                            },
+                            "bqCacheHit": true,
+                            "processingStats": {
+                                "totalBytesProcessed": "0",
+                                "billingExemptBytesProcessed": "0",
+                                "totalBytesBilled": "0",
+                                "billingMultiplier": 1,
+                                "totalSlotMsBilled": "0"
+                            },
+                            "containsLegacyNumericSchema": false,
+                            "numPagesRead": "1",
+                            "numRowsFetched": "5",
+                            "helixResponseSchema": {
+                                "field": [
+                                    {
+                                        "name": "t0___LEGO_COUNT_qt_m4h9446xgc",
+                                        "type": 2,
+                                        "mode": 1,
+                                        "tag": 1
+                                    },
+                                    {
+                                        "name": "t0___LEGO_SUM_qt_m4h9446xgc",
+                                        "type": 3,
+                                        "mode": 1,
+                                        "tag": 2
+                                    },
+                                    {
+                                        "name": "clmn3_",
+                                        "type": 1,
+                                        "mode": 1,
+                                        "tag": 3
+                                    }
+                                ],
+                                "fieldIdToPolicy": [],
+                                "dataPolicyColumnReferences": []
+                            },
+                            "helixJobStatus": {
+                                "state": 2,
+                                "errorStream": []
+                            },
+                            "rpcStatus": {},
+                            "retriableErrors": [],
+                            "deadlineSecs": 299.809915877,
+                            "jobCreationReason": {
+                                "code": 1
+                            }
+                        },
+                        "origin": 1,
+                        "mappingId": {
+                            "datasourceId": "d37cc422-d708-4174-9c1d-4253dac1dd5a"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "dataSubset": [
+                {
+                    "dataset": {
+                        "tableDataset": {
+                            "columnInfo": [
+                                {
+                                    "ns": "t0",
+                                    "name": "qt_wwga546xgc"
+                                },
+                                {
+                                    "ns": "t0",
+                                    "name": "qt_8cfa546xgc"
+                                }
+                            ],
+                            "totalCount": 104,
+                            "column": [
+                                {
+                                    "nullIndex": [],
+                                    "stringColumn": {
+                                        "values": [
+                                            "jul. 24",
+                                            "jun. 24",
+                                            "may. 24",
+                                            "abr 24",
+                                            "mar. 24",
+                                            "feb 24",
+                                            "ene. 24",
+                                            "dic. 23",
+                                            "nov. 23",
+                                            "oct. 23",
+                                            "sep. 23",
+                                            "ago. 23",
+                                            "jul. 23",
+                                            "jun. 23",
+                                            "may. 23",
+                                            "abr. 23",
+                                            "mar. 23",
+                                            "feb. 23",
+                                            "ene. 23",
+                                            "dic. 22",
+                                            "nov 22",
+                                            "oct. 22",
+                                            "sep. 22",
+                                            "ago. 22",
+                                            "jul. 22",
+                                            "jun. 22",
+                                            "may. 22",
+                                            "abr. 22",
+                                            "mar 22",
+                                            "feb. 22",
+                                            "ene. 22",
+                                            "dic. 21",
+                                            "nov. 21",
+                                            "oct. 21",
+                                            "sep. 21",
+                                            "ago. 21",
+                                            "jul. 21",
+                                            "jun. 21",
+                                            "may. 21",
+                                            "abr. 21",
+                                            "mar. 21",
+                                            "feb. 21",
+                                            "ene. 21",
+                                            "dic. 20",
+                                            "nov. 20",
+                                            "oct. 20",
+                                            "sep. 20",
+                                            "ago. 20",
+                                            "jul. 20",
+                                            "jun. 20",
+                                            "may. 20",
+                                            "abr. 20",
+                                            "mar. 20",
+                                            "feb. 20",
+                                            "ene. 20",
+                                            "dic. 19",
+                                            "nov. 19",
+                                            "oct. 19",
+                                            "sep. 19",
+                                            "ago. 19",
+                                            "jul. 19",
+                                            "jun. 19",
+                                            "may. 19",
+                                            "abr. 19",
+                                            "mar. 19",
+                                            "feb. 19",
+                                            "ene. 19",
+                                            "dic. 18",
+                                            "nov. 18",
+                                            "oct. 18",
+                                            "sep. 18",
+                                            "ago. 18",
+                                            "jul. 18",
+                                            "jun. 18",
+                                            "may. 18",
+                                            "abr. 18",
+                                            "mar. 18",
+                                            "feb. 18",
+                                            "ene. 18",
+                                            "dic. 17",
+                                            "nov. 17",
+                                            "oct. 17",
+                                            "sep. 17",
+                                            "ago. 17",
+                                            "jul. 17",
+                                            "jun. 17",
+                                            "may. 17",
+                                            "abr. 17",
+                                            "mar. 17",
+                                            "feb. 17",
+                                            "ene. 17",
+                                            "dic. 16",
+                                            "nov. 16",
+                                            "oct. 16",
+                                            "sep. 16",
+                                            "ago. 16",
+                                            "jul. 16",
+                                            "jun. 16",
+                                            "may. 16",
+                                            "abr. 16",
+                                            "mar. 16",
+                                            "feb. 16",
+                                            "ene. 16",
+                                            "dic. 15"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "nullIndex": [],
+                                    "doubleColumn": {
+                                        "values": [
+                                            202407,
+                                            202406,
+                                            202405,
+                                            202404,
+                                            202403,
+                                            202402,
+                                            202401,
+                                            202312,
+                                            202311,
+                                            202310,
+                                            202309,
+                                            202308,
+                                            202307,
+                                            202306,
+                                            202305,
+                                            202304,
+                                            202303,
+                                            202302,
+                                            202301,
+                                            202212,
+                                            202211,
+                                            202210,
+                                            202209,
+                                            202208,
+                                            202207,
+                                            202206,
+                                            202205,
+                                            202204,
+                                            202203,
+                                            202202,
+                                            202201,
+                                            202112,
+                                            202111,
+                                            202110,
+                                            202109,
+                                            202108,
+                                            202107,
+                                            202106,
+                                            202105,
+                                            202104,
+                                            202103,
+                                            202102,
+                                            202101,
+                                            202012,
+                                            202011,
+                                            202010,
+                                            202009,
+                                            202008,
+                                            202007,
+                                            202006,
+                                            202005,
+                                            202004,
+                                            202003,
+                                            202002,
+                                            202001,
+                                            201912,
+                                            201911,
+                                            201910,
+                                            201909,
+                                            201908,
+                                            201907,
+                                            201906,
+                                            201905,
+                                            201904,
+                                            201903,
+                                            201902,
+                                            201901,
+                                            201812,
+                                            201811,
+                                            201810,
+                                            201809,
+                                            201808,
+                                            201807,
+                                            201806,
+                                            201805,
+                                            201804,
+                                            201803,
+                                            201802,
+                                            201801,
+                                            201712,
+                                            201711,
+                                            201710,
+                                            201709,
+                                            201708,
+                                            201707,
+                                            201706,
+                                            201705,
+                                            201704,
+                                            201703,
+                                            201702,
+                                            201701,
+                                            201612,
+                                            201611,
+                                            201610,
+                                            201609,
+                                            201608,
+                                            201607,
+                                            201606,
+                                            201605,
+                                            201604,
+                                            201603,
+                                            201602,
+                                            201601,
+                                            201512
+                                        ]
+                                    }
+                                }
+                            ],
+                            "size": 104,
+                            "metadata": {
+                                "columnMetadata": [
+                                    {
+                                        "imageContainsDynamicData": false
+                                    },
+                                    {
+                                        "imageContainsDynamicData": false
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "requestId": "3d43f0ed-6190959-20240818",
+                    "isCompare": false,
+                    "jobRequestUrl": [],
+                    "isTotals": false,
+                    "viewTags": {
+                        "compareIndex": 0,
+                        "isTotals": false,
+                        "role": "main",
+                        "bypassCanvasFilters": false
+                    },
+                    "biEngineStatistics": {
+                        "biEngineReasons": []
+                    },
+                    "biJobUrl": "https://console.cloud.google.com/bigquery?project\u003dbumex-163220\u0026j\u003dbq:US:job_calgQSRPHF5Gpypd8Kz83K0fd5Go",
+                    "bqCacheHit": true
+                }
+            ],
+            "dataTimestamp": "1724012880324",
+            "responseMetaSet": {
+                "responseMetas": [
+                    {
+                        "requestNamespace": {
+                            "context": 0
+                        },
+                        "bqResponseMeta": {
+                            "biEngineStats": {
+                                "biEngineReasons": []
+                            },
+                            "bqCacheHit": true,
+                            "processingStats": {
+                                "totalBytesProcessed": "0",
+                                "billingExemptBytesProcessed": "0",
+                                "totalBytesBilled": "0",
+                                "billingMultiplier": 1,
+                                "totalSlotMsBilled": "0"
+                            },
+                            "containsLegacyNumericSchema": false,
+                            "numPagesRead": "1",
+                            "numRowsFetched": "104",
+                            "helixResponseSchema": {
+                                "field": [
+                                    {
+                                        "name": "t0___LEGO_COUNT_qt_8cfa546xgc",
+                                        "type": 2,
+                                        "mode": 1,
+                                        "tag": 1
+                                    },
+                                    {
+                                        "name": "t0___LEGO_SUM_qt_8cfa546xgc",
+                                        "type": 2,
+                                        "mode": 1,
+                                        "tag": 2
+                                    },
+                                    {
+                                        "name": "clmn1_",
+                                        "type": 1,
+                                        "mode": 1,
+                                        "tag": 3
+                                    }
+                                ],
+                                "fieldIdToPolicy": [],
+                                "dataPolicyColumnReferences": []
+                            },
+                            "helixJobStatus": {
+                                "state": 2,
+                                "errorStream": []
+                            },
+                            "rpcStatus": {},
+                            "retriableErrors": [],
+                            "deadlineSecs": 299.774068921,
+                            "jobCreationReason": {
+                                "code": 1
+                            }
+                        },
+                        "origin": 1,
+                        "mappingId": {
+                            "datasourceId": "d37cc422-d708-4174-9c1d-4253dac1dd5a"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "dataSubset": [
+                {
+                    "dataset": {
+                        "tableDataset": {
+                            "columnInfo": [
+                                {
+                                    "ns": "t0",
+                                    "name": "qt_k2g8446xgc"
+                                },
+                                {
+                                    "ns": "t0",
+                                    "name": "qt_pfc8446xgc"
+                                },
+                                {
+                                    "ns": "t0",
+                                    "name": "qt_j7c8446xgc"
+                                },
+                                {
+                                    "ns": "t0",
+                                    "name": "qt_czd8446xgc"
+                                }
+                            ],
+                            "totalCount": 43,
+                            "column": [
+                                {
+                                    "nullIndex": [],
+                                    "stringColumn": {
+                                        "values": [
+                                            "Puerto Madero",
+                                            "Palermo",
+                                            "Nu\u00f1ez",
+                                            "Colegiales",
+                                            "Belgrano",
+                                            "Saavedra",
+                                            "Chacarita",
+                                            "Parque Chas",
+                                            "Coghlan",
+                                            "Recoleta",
+                                            "Villa Urquiza",
+                                            "Villa Crespo",
+                                            "Retiro",
+                                            "Villa Ortuzar",
+                                            "San Telmo",
+                                            "Almagro",
+                                            "Paternal",
+                                            "Caballito",
+                                            "Villa Pueyrredon",
+                                            "Villa Luro",
+                                            "Boedo",
+                                            "Parque Chacabuco",
+                                            "Villa Devoto",
+                                            "San Cristobal",
+                                            "Parque Patricios",
+                                            "San Nicol\u00e1s",
+                                            "Villa del Parque",
+                                            "Monserrat",
+                                            "Balvanera",
+                                            "Agronom\u00eda",
+                                            "Villa Gral Mitre",
+                                            "Constituci\u00f3n",
+                                            "Santa Rita",
+                                            "La Boca",
+                                            "Velez Sarsfield",
+                                            "Flores",
+                                            "Monte Castro",
+                                            "Barracas",
+                                            "Parque Avellaneda",
+                                            "Liniers",
+                                            "Mataderos",
+                                            "Floresta",
+                                            "Lugano"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "nullIndex": [
+                                        0,
+                                        7,
+                                        13,
+                                        14,
+                                        16,
+                                        20,
+                                        24,
+                                        29,
+                                        30,
+                                        33,
+                                        34,
+                                        36,
+                                        37,
+                                        38,
+                                        39,
+                                        40,
+                                        41,
+                                        42
+                                    ],
+                                    "doubleColumn": {
+                                        "values": [
+                                            622820,
+                                            561156,
+                                            597387,
+                                            599722,
+                                            548968,
+                                            510826,
+                                            517233,
+                                            551357,
+                                            551026,
+                                            592115,
+                                            571587,
+                                            522970,
+                                            493786,
+                                            580941,
+                                            471413,
+                                            427072,
+                                            500638,
+                                            492639,
+                                            472744,
+                                            481868,
+                                            505523,
+                                            508543,
+                                            505994,
+                                            430985,
+                                            477635
+                                        ]
+                                    }
+                                },
+                                {
+                                    "nullIndex": [],
+                                    "doubleColumn": {
+                                        "values": [
+                                            958337,
+                                            530763,
+                                            517793,
+                                            506597,
+                                            505424,
+                                            505201,
+                                            498592,
+                                            495068,
+                                            494132,
+                                            493906,
+                                            489756,
+                                            480213,
+                                            471775,
+                                            466658,
+                                            466077,
+                                            458648,
+                                            456737,
+                                            452340,
+                                            451661,
+                                            442414,
+                                            441802,
+                                            440061,
+                                            436382,
+                                            434795,
+                                            434761,
+                                            432086,
+                                            428738,
+                                            426619,
+                                            423792,
+                                            423626,
+                                            421645,
+                                            417294,
+                                            416570,
+                                            414501,
+                                            414275,
+                                            412782,
+                                            409178,
+                                            407616,
+                                            400421,
+                                            394111,
+                                            386085,
+                                            378778,
+                                            303133
+                                        ]
+                                    }
+                                },
+                                {
+                                    "nullIndex": [
+                                        0
+                                    ],
+                                    "doubleColumn": {
+                                        "values": [
+                                            525154,
+                                            511548,
+                                            495489,
+                                            497479,
+                                            497041,
+                                            496851,
+                                            482292,
+                                            490498,
+                                            491197,
+                                            482668,
+                                            466744,
+                                            466356,
+                                            464109,
+                                            462898,
+                                            450627,
+                                            429084,
+                                            449681,
+                                            445633,
+                                            433133,
+                                            442030,
+                                            440682,
+                                            428498,
+                                            413849,
+                                            398713,
+                                            428421,
+                                            422508,
+                                            417916,
+                                            418241,
+                                            418987,
+                                            421263,
+                                            403954,
+                                            412638,
+                                            417013,
+                                            408259,
+                                            405735,
+                                            405230,
+                                            406312,
+                                            390931,
+                                            390397,
+                                            382817,
+                                            376969,
+                                            300122
+                                        ]
+                                    }
+                                }
+                            ],
+                            "size": 43,
+                            "metadata": {
+                                "columnMetadata": [
+                                    {
+                                        "imageContainsDynamicData": false
+                                    },
+                                    {
+                                        "imageContainsDynamicData": false
+                                    },
+                                    {
+                                        "imageContainsDynamicData": false
+                                    },
+                                    {
+                                        "imageContainsDynamicData": false
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "requestId": "2cfd5dea-6190960-20240818",
+                    "isCompare": false,
+                    "jobRequestUrl": [],
+                    "isTotals": false,
+                    "viewTags": {
+                        "compareIndex": 0,
+                        "isTotals": false,
+                        "role": "main",
+                        "bypassCanvasFilters": false
+                    },
+                    "biEngineStatistics": {
+                        "biEngineReasons": []
+                    },
+                    "biJobUrl": "https://console.cloud.google.com/bigquery?project\u003dbumex-163220\u0026j\u003dbq:US:job_vpa8kd8fUDYF6PDWp4ZyP10_CEQO",
+                    "bqCacheHit": true
+                }
+            ],
+            "dataTimestamp": "1724012880292",
+            "responseMetaSet": {
+                "responseMetas": [
+                    {
+                        "requestNamespace": {
+                            "context": 0
+                        },
+                        "bqResponseMeta": {
+                            "biEngineStats": {
+                                "biEngineReasons": []
+                            },
+                            "bqCacheHit": true,
+                            "processingStats": {
+                                "totalBytesProcessed": "0",
+                                "billingExemptBytesProcessed": "0",
+                                "totalBytesBilled": "0",
+                                "billingMultiplier": 1,
+                                "totalSlotMsBilled": "0"
+                            },
+                            "containsLegacyNumericSchema": false,
+                            "numPagesRead": "1",
+                            "numRowsFetched": "43",
+                            "helixResponseSchema": {
+                                "field": [
+                                    {
+                                        "name": "t0___LEGO_COUNT_qt_czd8446xgc",
+                                        "type": 2,
+                                        "mode": 1,
+                                        "tag": 1
+                                    },
+                                    {
+                                        "name": "t0___LEGO_COUNT_qt_j7c8446xgc",
+                                        "type": 2,
+                                        "mode": 1,
+                                        "tag": 2
+                                    },
+                                    {
+                                        "name": "t0___LEGO_COUNT_qt_pfc8446xgc",
+                                        "type": 2,
+                                        "mode": 1,
+                                        "tag": 3
+                                    },
+                                    {
+                                        "name": "t0___LEGO_SUM_qt_czd8446xgc",
+                                        "type": 3,
+                                        "mode": 1,
+                                        "tag": 4
+                                    },
+                                    {
+                                        "name": "t0___LEGO_SUM_qt_j7c8446xgc",
+                                        "type": 3,
+                                        "mode": 1,
+                                        "tag": 5
+                                    },
+                                    {
+                                        "name": "t0___LEGO_SUM_qt_pfc8446xgc",
+                                        "type": 3,
+                                        "mode": 1,
+                                        "tag": 6
+                                    },
+                                    {
+                                        "name": "clmn4_",
+                                        "type": 1,
+                                        "mode": 1,
+                                        "tag": 7
+                                    }
+                                ],
+                                "fieldIdToPolicy": [],
+                                "dataPolicyColumnReferences": []
+                            },
+                            "helixJobStatus": {
+                                "state": 2,
+                                "errorStream": []
+                            },
+                            "rpcStatus": {},
+                            "retriableErrors": [],
+                            "deadlineSecs": 299.806526848,
+                            "jobCreationReason": {
+                                "code": 1
+                            }
+                        },
+                        "origin": 1,
+                        "mappingId": {
+                            "datasourceId": "d37cc422-d708-4174-9c1d-4253dac1dd5a"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "dataSubset": [
+                {
+                    "dataset": {
+                        "tableDataset": {
+                            "columnInfo": [
+                                {
+                                    "ns": "t0",
+                                    "name": "qt_mj49446xgc"
+                                },
+                                {
+                                    "ns": "t0",
+                                    "name": "qt_eg19446xgc"
+                                }
+                            ],
+                            "totalCount": 55,
+                            "column": [
+                                {
+                                    "nullIndex": [],
+                                    "stringColumn": {
+                                        "values": [
+                                            "Agronomia",
+                                            "Agronom\u00eda",
+                                            "Almagro",
+                                            "Balvanera",
+                                            "Barracas",
+                                            "Belgrano",
+                                            "Boedo",
+                                            "Caballito",
+                                            "Chacarita",
+                                            "Coghlan",
+                                            "Colegiales",
+                                            "Constituci\u00f3n",
+                                            "Flores",
+                                            "Floresta",
+                                            "La Boca",
+                                            "La Paternal",
+                                            "Liniers",
+                                            "Lugano",
+                                            "Mataderos",
+                                            "Monserrat",
+                                            "Monte Castro",
+                                            "Nueva Pompeya",
+                                            "Nunez",
+                                            "Nu\u00f1ez",
+                                            "Palermo",
+                                            "Parque Avellaneda",
+                                            "Parque Chacabuco",
+                                            "Parque Chas",
+                                            "Parque Patricios",
+                                            "Paternal",
+                                            "Puerto Madero",
+                                            "Recoleta",
+                                            "Retiro",
+                                            "Saavedra",
+                                            "San Cristobal",
+                                            "San Nicolas",
+                                            "San Nicol\u00e1s",
+                                            "San Telmo",
+                                            "Santa Rita",
+                                            "Velez Sarfield",
+                                            "Velez Sarsfield",
+                                            "Versalles",
+                                            "Villa Crespo",
+                                            "Villa Devoto",
+                                            "Villa Gral Mitre",
+                                            "Villa Lugano",
+                                            "Villa Luro",
+                                            "Villa Ortuzar",
+                                            "Villa Pueyrredon",
+                                            "Villa Real",
+                                            "Villa Riachuelo",
+                                            "Villa Santa Rita",
+                                            "Villa Soldati",
+                                            "Villa Urquiza",
+                                            "Villa del Parque"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "nullIndex": [],
+                                    "doubleColumn": {
+                                        "values": [
+                                            20105,
+                                            3269805,
+                                            7487207,
+                                            6708125,
+                                            6267585,
+                                            8646905,
+                                            7010002,
+                                            7401603,
+                                            8267387,
+                                            7599765,
+                                            8406609,
+                                            6492579,
+                                            6638329,
+                                            6132511,
+                                            4099845,
+                                            37022,
+                                            6065052,
+                                            1969778,
+                                            4687183,
+                                            6744331,
+                                            5675678,
+                                            791208,
+                                            42725,
+                                            8766670,
+                                            9188192,
+                                            2661622,
+                                            7143623,
+                                            6034587,
+                                            4657835,
+                                            4417564,
+                                            8431009,
+                                            8360659,
+                                            8095342,
+                                            8151542,
+                                            6797145,
+                                            55079,
+                                            6641591,
+                                            7168661,
+                                            6198297,
+                                            30092,
+                                            5390333,
+                                            758676,
+                                            7842435,
+                                            7261289,
+                                            6017813,
+                                            8450,
+                                            6261836,
+                                            6909876,
+                                            7307820,
+                                            703046,
+                                            329802,
+                                            36057,
+                                            230150,
+                                            8192251,
+                                            7008251
+                                        ]
+                                    }
+                                }
+                            ],
+                            "size": 55,
+                            "metadata": {
+                                "columnMetadata": [
+                                    {
+                                        "imageContainsDynamicData": false
+                                    },
+                                    {
+                                        "imageContainsDynamicData": false
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "requestId": "63a3d289-6190961-20240818",
+                    "isCompare": false,
+                    "jobRequestUrl": [],
+                    "isTotals": false,
+                    "viewTags": {
+                        "compareIndex": 0,
+                        "isTotals": false,
+                        "role": "main",
+                        "bypassCanvasFilters": false
+                    },
+                    "biEngineStatistics": {
+                        "biEngineReasons": []
+                    },
+                    "biJobUrl": "https://console.cloud.google.com/bigquery?project\u003dbumex-163220\u0026j\u003dbq:US:job_xxNJ1F3PKs6DXAeEReU05lJNAjCC",
+                    "bqCacheHit": true
+                }
+            ],
+            "dataTimestamp": "1724012880290",
+            "responseMetaSet": {
+                "responseMetas": [
+                    {
+                        "requestNamespace": {
+                            "context": 0
+                        },
+                        "bqResponseMeta": {
+                            "biEngineStats": {
+                                "biEngineReasons": []
+                            },
+                            "bqCacheHit": true,
+                            "processingStats": {
+                                "totalBytesProcessed": "0",
+                                "billingExemptBytesProcessed": "0",
+                                "totalBytesBilled": "0",
+                                "billingMultiplier": 1,
+                                "totalSlotMsBilled": "0"
+                            },
+                            "containsLegacyNumericSchema": false,
+                            "numPagesRead": "1",
+                            "numRowsFetched": "55",
+                            "totalResults": "55",
+                            "helixResponseSchema": {
+                                "field": [
+                                    {
+                                        "name": "clmn2_",
+                                        "type": 1,
+                                        "mode": 1,
+                                        "tag": 1
+                                    },
+                                    {
+                                        "name": "t0_qt_eg19446xgc",
+                                        "type": 3,
+                                        "mode": 1,
+                                        "tag": 2
+                                    }
+                                ],
+                                "fieldIdToPolicy": [],
+                                "dataPolicyColumnReferences": []
+                            },
+                            "helixJobStatus": {
+                                "state": 2,
+                                "errorStream": []
+                            },
+                            "rpcStatus": {},
+                            "retriableErrors": [],
+                            "deadlineSecs": 299.808067046,
+                            "jobCreationReason": {
+                                "code": 1
+                            }
+                        },
+                        "origin": 1,
+                        "mappingId": {
+                            "datasourceId": "d37cc422-d708-4174-9c1d-4253dac1dd5a"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
