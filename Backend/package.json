@@ -1,16 +1,27 @@
 {
+  "type": "module",
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
+  "description": "Servidor de aplicacion de prospectos de alquiler.",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "dev": "nodemon app.js",
+    "start": "node app.js",
+    "devel": "nodemon app.js",
+    "development": "nodemon app.js",
+    "knex": "knex",
+    "migrate": "knex migrate:latest --knexfile ../DDBB/sql/knexfile.js",
+    "db_create": "knex migrate:latest --knexfile ../DDBB/sql/knexfile.js && npx knex seed:run --knexfile ../DDBB/sql/knexfile.js",
+    "db_seed": "npx knex seed:run --knexfile ../DDBB/sql/knexfile.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "puppeteer": "^23.1.0"
+    "express": "^4.21.0",
+    "pg": "^8.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
   }
 }

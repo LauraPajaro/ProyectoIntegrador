@@ -1,0 +1,62 @@
+[
+    {
+        "Comuna": "COMUNA 1",
+        "BARRIOS": "Retiro, San Nicolás, Puerto Madero, Microcentro, San Telmo, Montserrat y Constitución"
+    },
+    {
+        "Comuna": "COMUNA 2",
+        "BARRIOS": "Recoleta"
+    },
+    {
+        "Comuna": "COMUNA 3",
+        "BARRIOS": "Balvanera y San Cristóbal"
+    },
+    {
+        "Comuna": "COMUNA 4",
+        "BARRIOS": "La Boca, Barracas, Parque Patricios y Nueva Pompeya"
+    },
+    {
+        "Comuna": "COMUNA 5",
+        "BARRIOS": "Almagro y Boedo"
+    },
+    {
+        "Comuna": "COMUNA 6",
+        "BARRIOS": "Caballito"
+    },
+    {
+        "Comuna": "COMUNA 7",
+        "BARRIOS": "Flores y Parque Chacabuco"
+    },
+    {
+        "Comuna": "COMUNA 8",
+        "BARRIOS": "Villa Soldati, Villa Riachuelo, Villa Lugano"
+    },
+    {
+        "Comuna": "COMUNA 9",
+        "BARRIOS": "Liniers, Mataderos y Parque Avellaneda"
+    },
+    {
+        "Comuna": "COMUNA 10",
+        "BARRIOS": "Villa Real, Monte Castro, Versalles, Floresta, Vélez Sarsfield y Villa Luro"
+    },
+    {
+        "Comuna": "COMUNA 11",
+        "BARRIOS": "Villa General Mitre, Villa Devoto, Villa del Parque y Villa Santa Rita"
+    },
+    {
+        "Comuna": "COMUNA 12",
+        "BARRIOS": "Coghlan, Saavedra, Villa Urquiza y Villa Pueyrredón"
+    },
+    {
+        "Comuna": "COMUNA 13",
+        "BARRIOS": "Núñez, Belgrano y Colegiales"
+    },
+    {
+        "Comuna": "COMUNA 14",
+        "BARRIOS": "Palermo"
+    },
+    {
+        "Comuna": "COMUNA 15",
+        "BARRIOS": "Chacarita, Villa Crespo, La Paternal, Villa Ortúzar, Agronomía y Parque Chas"
+    }
+]
