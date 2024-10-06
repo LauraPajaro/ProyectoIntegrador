@@ -13,13 +13,18 @@
     "knex": "knex",
     "migrate": "knex migrate:latest --knexfile ../DDBB/sql/knexfile.js",
     "db_create": "knex migrate:latest --knexfile ../DDBB/sql/knexfile.js && npx knex seed:run --knexfile ../DDBB/sql/knexfile.js",
-    "db_seed": "npx knex seed:run --knexfile ../DDBB/sql/knexfile.js"
+    "db_seed": "npx knex seed:run --knexfile ../DDBB/sql/knexfile.js",
+    "migrate_make": "knex migrate:make init --knexfile ../DDBB/sql/knexfile.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.21.0",
-    "pg": "^8.13.0"
+    "knex": "^3.1.0",
+    "path": "^0.12.7",
+    "pg": "^8.13.0",
+    "url": "^0.11.4"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"

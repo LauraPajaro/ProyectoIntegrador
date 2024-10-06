@@ -1,7 +1,7 @@
 import puppeteer from 'puppeteer';
 import fs from 'fs';
 
-
+let now = new Date()
 async function openWebPage() {
     const browser = await puppeteer.launch({ headless: 'new', slowMo: 200 });
     const page = await browser.newPage();
