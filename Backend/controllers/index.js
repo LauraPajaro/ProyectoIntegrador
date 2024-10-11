@@ -20,14 +20,14 @@ const testZbody = async (req, res, criteria) => {
           message: issue.message,
         })),
       });
-      return; // Asegúrate de no continuar el flujo
+      return null; // Devuelve null si hay un error de validación
     } else {
       console.log(error);
       res.status(500).send('Internal server error');
-      return;
+      return null;
     }
   }
-  return [req, res];
+  return [req, res]; // Devuelve un array solo si todo está bien
 };
 
 //---------------------PAGES----------------------------
@@ -65,10 +65,11 @@ router.post('/api/consulta', async (req, res, next) => {
   };
 
   try {
-    const [reqValidated, resValidated] = await testZbody(req, res, bodyCriteria);
-    if (!reqValidated) return; // Si la validación falló, no continúa
-    const result = await services.getConsulta(req.body); // Llama al servicio con el cuerpo validado
-    res.json(result); // Devuelve el resultado como JSON
+    const result = await testZbody(req, res, bodyCriteria);
+    if (!result) return; // Si testZbody devolvió null, no continúa
+    const [reqValidated, resValidated] = result; // Desestructura solo si testZbody devuelve un array
+    const consultaResult = await services.getConsulta(reqValidated.body); // Llama al servicio con el cuerpo validado
+    resValidated.json(consultaResult); // Devuelve el resultado como JSON
   } catch (error) {
     next(error); // Maneja cualquier otro error
   }

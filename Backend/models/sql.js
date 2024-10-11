@@ -29,9 +29,12 @@ export const getSchema = await (async () => {
     }, {});
     return () => res;
 })();
-export const get = async (tableName) => {
+export const get = async (tableName, where) => {
+    if(tableName.toLowerCase().startsWith('cdc')) return (await connection.select('*').from(tableName));
+
     tables[tableName] = tables[tableName] != null ? tables[tableName] : (await connection.select('*').from(tableName));
-    return tables[tableName];
+ 
+    return where ? tables[tableName].filter(where) : tables[tableName];
 };
 /**
 * @param {string} tableName -> name of SQL table
@@ -40,7 +43,7 @@ export const get = async (tableName) => {
 * @returns {Promise<Object>} a Promise with the selected values
 */
 export const find = async (tableName, where, dflt = null) => {
-    tables[tableName] = tables[tableName] != null ? tables[tableName] : (await connection.select('*').from(tableName)).map(keysToCC);
+    tables[tableName] = tables[tableName] != null ? tables[tableName] : (await connection.select('*').from(tableName));
     return tables[tableName].find(where) || dflt;
 };
 /**

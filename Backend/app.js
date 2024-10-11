@@ -4,7 +4,7 @@ import controllers from './controllers/index.js'
 import env from './config/env.js';
 
 let app = express();
-
+app.use(express.json()); 
 app.use(controllers)
 
 app.listen(env.app.port, () => {
