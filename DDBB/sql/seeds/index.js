@@ -193,7 +193,7 @@ const crearModelosIcl = async (knex, tiposPrediccion) => {
   await knex('predicciones').insert(registrosPredicciones);
 };
 const crearModelos1Amb = async (knex, tiposPrediccion, barrios) => {
-  let  tipoPrediccionId = tiposPrediccion?.find(t => t.nombre === 'alquileres1amb')?.tipoPrdiccionIpcId;
+  let  tipoPrediccionId = tiposPrediccion?.find(t => t.nombre === 'alquileres1Amb')?.tipoPrdiccionIpcId;
 
   // Iterar sobre cada modelo de predicciones para 1 ambiente
   for (const prediccionData of prediccionesAlquileres1Amb) {
@@ -231,7 +231,7 @@ const crearModelos1Amb = async (knex, tiposPrediccion, barrios) => {
   }
 };
 const crearModelos2Amb = async (knex, tiposPrediccion, barrios) => {
-  let tipoPrediccionId = tiposPrediccion?.find(t => t.nombre === 'alquileres2amb')?.tipoPrdiccionIpcId;
+  let tipoPrediccionId = tiposPrediccion?.find(t => t.nombre === 'alquileres2Amb')?.tipoPrdiccionIpcId;
 
   // Iterar sobre cada modelo de predicciones para 1 ambiente
   for (const prediccionData of prediccionesAlquileres2Amb) {
@@ -269,7 +269,7 @@ const crearModelos2Amb = async (knex, tiposPrediccion, barrios) => {
   }
 };
 const crearModelos3Amb = async (knex, tiposPrediccion, barrios) => {
-  let tipoPrediccionId = tiposPrediccion?.find(t => t.nombre === 'alquileres3amb')?.tipoPrdiccionIpcId;
+  let tipoPrediccionId = tiposPrediccion?.find(t => t.nombre === 'alquileres3Amb')?.tipoPrdiccionIpcId;
 
   // Iterar sobre cada modelo de predicciones para 1 ambiente
   for (const prediccionData of prediccionesAlquileres3Amb) {

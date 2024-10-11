@@ -88,9 +88,9 @@ export const up = async function (knex) {
                 [
                     { "nombre": "ipc" },
                     { "nombre": "icl" },
-                    { "nombre": "alquileres1amb" },
-                    { "nombre": "alquileres2amb" },
-                    { "nombre": "alquileres3amb" },
+                    { "nombre": "alquileres1Amb" },
+                    { "nombre": "alquileres2Amb" },
+                    { "nombre": "alquileres3Amb" },
                 ]
             );
         })
