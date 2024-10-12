@@ -67,6 +67,17 @@ export default {
         let res = await sql.get(ipc);
         return res;
     },
+    //Barrios
+    getBarrios: async () => {
+        let res = await sql.get(barrios);
+        return res;
+    },
+    //TiposPrediccion
+    getTiposPrediccion: async () => {
+        let res = await sql.get(tiposPrediccion);
+        return res;
+    },
+    //Consulta
     getConsulta: async (prospecto) => {
         let { precio, barrio, indice, cadencia, cantidadAmb, fechaInicioContrato } = prospecto;
         let tipoPrediccionIndice = await sql.find(tiposPrediccion, t => t.nombre === indice);
@@ -135,4 +146,5 @@ export default {
        
         return { valorPrimeraActualización, dataIndice, dataAlquiler, ...prospecto }
     },
+
 }

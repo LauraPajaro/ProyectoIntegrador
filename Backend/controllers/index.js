@@ -54,6 +54,22 @@ router.get('/api/ipc', async (req, res, next) => {
     next(error); // Maneja errores con el middleware 'next'
   }
 });
+router.get('/api/barrios', async (req, res, next) => {
+  try {
+    const result = await services.getBarrios();
+    res.json(result); // Devuelve el resultado como JSON
+  } catch (error) {
+    next(error); // Maneja errores con el middleware 'next'
+  }
+});
+router.get('/api/tipos-prediccion', async (req, res, next) => {
+  try {
+    const result = await services.getTiposPrediccion();
+    res.json(result); // Devuelve el resultado como JSON
+  } catch (error) {
+    next(error); // Maneja errores con el middleware 'next'
+  }
+});
 router.post('/api/consulta', async (req, res, next) => {
   const bodyCriteria = {
     precio: z.number(),
