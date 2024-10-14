@@ -1,21 +1,25 @@
-import * as React from 'react';
+import React, { useEffect, useState, useRef } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { DataGrid } from '@mui/x-data-grid';
 import { Box } from '@mui/material';
+import { getPublicData } from '../../../store/slices/publicSlice';    
 
 const IpcCat = () => {
-    const rows = [
-        { id: 1, col1: 'Hello', col2: 'World' },
-        { id: 2, col1: 'DataGridPro', col2: 'is Awesome' },
-        { id: 3, col1: 'MUI', col2: 'is Amazing' },
-    ];
+    const dispatch = useDispatch();
+    const { barrios, tiposPrediccion } = useSelector(state => state.public.data);
+    useEffect(() => {
+        dispatch(getPublicData());
+    }, [dispatch]);
+    const rows = barrios;
     const columns = [
-        { field: 'col1', headerName: 'Column 1', width: 150 },
-        { field: 'col2', headerName: 'Column 2', width: 150 },
+        { field: 'barrioId', headerName: 'Column 1', width: 150 },
+        { field: 'nombre', headerName: 'Column 2', width: 150 },
     ];
     return <Box sx={{ padding: '1rem', paddingTop: '0' }}>
         <DataGrid
             checkboxSelection
             rows={rows || []}
+            getRowId={r=> r.barrioId}
             columns={columns}
             initialState={{
                 pagination: {

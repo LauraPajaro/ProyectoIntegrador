@@ -1,5 +1,8 @@
 import * as sql from '../models/sql.js';
 import _ from 'lodash';
+import env from '../config/env.js';
+import crypto from 'crypto';
+
 const ipc = 'ipc';
 const icl = 'icl';
 const alquileres1Amb = 'alquileres1Amb';
@@ -47,7 +50,7 @@ function compararFechasPorMesYAnio(fecha1, fecha2, operadorLogico) {
         default:
             throw new Error(`Operador lógico no soportado: ${operadorLogico}`);
     }
-}
+};
 function ajustarFechaPorMes(fecha, mesesOffset) {
     // Convertir la fecha en un objeto Date
     const date = new Date(fecha);
@@ -60,22 +63,38 @@ function ajustarFechaPorMes(fecha, mesesOffset) {
 
     // Devolver la fecha en formato ISO (que incluye la hora)
     return date.toISOString();
-}
+};
+const encryptResponse = (data) => {
+    const algorithm = 'aes-256-cbc';
+    const key = Buffer.from(env.crypto.publicKey, 'hex');  // Carga de la clave pública desde las variables de entorno
+    const iv = Buffer.from(env.crypto.iv, 'hex');  // Carga del IV desde las variables de entorno
+    const cipher = crypto.createCipheriv(algorithm, key, iv);
+    let encrypted = cipher.update(JSON.stringify(data), 'utf8', 'hex');
+    encrypted += cipher.final('hex');
+
+    return encrypted;
+};
 export default {
     //IPC
     getHistoricoIPC: async () => {
-        let res = await sql.get(ipc);
-        return res;
+        let data = await sql.get(ipc);
+        const responseBody = JSON.stringify(data);
+        const encryptedBody = encryptResponse(responseBody);
+        return { data: encryptedBody };
     },
     //Barrios
     getBarrios: async () => {
-        let res = await sql.get(barrios);
-        return res;
+        let data = await sql.get(barrios);
+        const responseBody = JSON.stringify(data);
+        const encryptedBody = encryptResponse(responseBody);
+        return { data: encryptedBody };
     },
     //TiposPrediccion
     getTiposPrediccion: async () => {
-        let res = await sql.get(tiposPrediccion);
-        return res;
+        let data = await sql.get(tiposPrediccion);
+        const responseBody = JSON.stringify(data);
+        const encryptedBody = encryptResponse(responseBody);
+        return { data: encryptedBody };
     },
     //Consulta
     getConsulta: async (prospecto) => {
@@ -124,7 +143,7 @@ export default {
         });
         //----------------------------------- DATOS PROSPECTO ACTUALIZADO
         const getActualizacion = (datosIndice, cadencia, fechaInicio, precioOriginal, tipoIndice) => {
-            
+
             let valorNominal = null
             switch (tipoIndice) {
                 case 'ipc':
@@ -132,19 +151,21 @@ export default {
                     valorNominal = rangoInidice?.reduce((acc, x) => acc * (x.valor / 100 + 1), precioOriginal)
                     return valorNominal
                 case 'icl':
-                    let indiceInicio = datosIndice?.find(d=> compararFechasPorMesYAnio(d.fecha, fechaInicio,'==='))
-                    let indiceActualizacion = datosIndice?.find(d=> compararFechasPorMesYAnio(d.fecha, ajustarFechaPorMes(fechaInicio, cadencia),'==='));
+                    let indiceInicio = datosIndice?.find(d => compararFechasPorMesYAnio(d.fecha, fechaInicio, '==='))
+                    let indiceActualizacion = datosIndice?.find(d => compararFechasPorMesYAnio(d.fecha, ajustarFechaPorMes(fechaInicio, cadencia), '==='));
                     valorNominal = precioOriginal / indiceInicio?.valor * indiceActualizacion?.valor;
                     return valorNominal
                 default:
                     break;
             }
-            
+
             return valorNominal
         };
         let valorPrimeraActualización = getActualizacion(dataIndice, cadencia, fechaInicioContrato, precio, indice);
-       
-        return { valorPrimeraActualización, dataIndice, dataAlquiler, ...prospecto }
+        let data = { valorPrimeraActualización, dataIndice, dataAlquiler, ...prospecto }
+        const responseBody = JSON.stringify(data);
+        const encryptedBody = encryptResponse(responseBody);
+        return { data: encryptedBody };
     },
 
 }

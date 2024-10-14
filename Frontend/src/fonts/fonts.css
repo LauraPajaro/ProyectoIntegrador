@@ -1,0 +1,16 @@
+/* src/fonts/fonts.css */
+@font-face {
+    font-family: 'Geist Sans';
+    font-weight: 400; /* Normal weight */
+    font-style: normal;
+    src: url('Geist-Regular.woff2') format('woff2'),
+         url('Geist-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Geist Sans';
+    font-weight: 700; /* Bold weight */
+    font-style: normal;
+    src: url('Geist-Bold.woff2') format('woff2'),
+         url('Geist-Bold.woff') format('woff');
+}

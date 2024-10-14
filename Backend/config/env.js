@@ -61,5 +61,6 @@ export default {
     database: process.env.PGDATABASE,
     password: process.env.PGPASSWORD,
     port: process.env.PGPORT,
-  }
+  },
+  crypto: {publicKey: process.env.CRYPTO_PUBLIC_KEY, iv: process.env.CRYPTO_IV}
 }
