@@ -56,7 +56,7 @@ function ajustarFechaPorMes(fecha, mesesOffset) {
     const date = new Date(fecha);
 
     // Obtener el mes actual y sumar el offset de meses
-    const nuevoMes = date.getUTCMonth() + (mesesOffset - 1);
+    const nuevoMes = date.getUTCMonth() + (mesesOffset);
 
     // Ajustar la fecha con el nuevo mes
     date.setUTCMonth(nuevoMes);
@@ -125,7 +125,7 @@ export default {
         //----------------------------------- DATOS PROMEDIO ALQUILER
         let tipoPrediccionAlquiler = await sql.find(tiposPrediccion, t => t.nombre === `alquileres${cantidadAmb}Amb`);
         let barrioId = await sql.find(barrios, b => b.nombre === barrio)
-        let historicoAlquiler = await sql.get(`alquileres${cantidadAmb}Amb`, i => compararFechasPorMesYAnio(i.fecha, fechaInicioContrato, '>='));
+        let historicoAlquiler = await sql.get(`alquileres${cantidadAmb}Amb`, i => compararFechasPorMesYAnio(i.fecha, fechaInicioContrato, '>=') && i.barrioId === barrioId?.barrioId);
         historicoAlquiler.sort((a, b) => new Date(a.fecha) - new Date(b.fecha));
         let modeloAlquiler = allModelos?.filter(m => m.tipoPrediccionId === tipoPrediccionAlquiler?.tipoPrediccionId && barrioId?.barrioId === m.barrioId)
             ?.reduce((max, curr) => compararFechasPorMesYAnio(curr.ultimaFechaEntrenamiento, max.ultimaFechaEntrenamiento, '>') ? curr : max);
@@ -143,26 +143,28 @@ export default {
         });
         //----------------------------------- DATOS PROSPECTO ACTUALIZADO
         const getActualizacion = (datosIndice, cadencia, fechaInicio, precioOriginal, tipoIndice) => {
-
-            let valorNominal = null
+            let fechaUltimoIndiceActualizacion = ajustarFechaPorMes(fechaInicio, cadencia - 1);
+            
+            let valorPrimeraActualizacion = null
             switch (tipoIndice) {
                 case 'ipc':
-                    let rangoInidice = datosIndice?.filter(i => compararFechasPorMesYAnio(i.fecha, fechaInicio, '>=') && compararFechasPorMesYAnio(i.fecha, ajustarFechaPorMes(fechaInicio, cadencia), '<='))
-                    valorNominal = rangoInidice?.reduce((acc, x) => acc * (x.valor / 100 + 1), precioOriginal)
-                    return valorNominal
+                    let rangoInidice = datosIndice?.filter(i => compararFechasPorMesYAnio(i.fecha, fechaInicio, '>=') && compararFechasPorMesYAnio(i.fecha, fechaUltimoIndiceActualizacion, '<='))
+                    valorPrimeraActualizacion = rangoInidice?.reduce((acc, x) => acc * (x.valor / 100 + 1), precioOriginal)
+                    return {valorPrimeraActualizacion,fechaUltimoIndiceActualizacion}
                 case 'icl':
                     let indiceInicio = datosIndice?.find(d => compararFechasPorMesYAnio(d.fecha, fechaInicio, '==='))
-                    let indiceActualizacion = datosIndice?.find(d => compararFechasPorMesYAnio(d.fecha, ajustarFechaPorMes(fechaInicio, cadencia), '==='));
-                    valorNominal = precioOriginal / indiceInicio?.valor * indiceActualizacion?.valor;
-                    return valorNominal
+                    let indiceActualizacion = datosIndice?.find(d => compararFechasPorMesYAnio(d.fecha, fechaUltimoIndiceActualizacion, '==='));
+                    valorPrimeraActualizacion = precioOriginal / indiceInicio?.valor * indiceActualizacion?.valor;
+                    return {valorPrimeraActualizacion,fechaUltimoIndiceActualizacion}
                 default:
                     break;
             }
 
-            return valorNominal
+            return {valorPrimeraActualizacion, fechaUltimoIndiceActualizacion}
         };
-        let valorPrimeraActualización = getActualizacion(dataIndice, cadencia, fechaInicioContrato, precio, indice);
-        let data = { valorPrimeraActualización, dataIndice, dataAlquiler, ...prospecto }
+        let {valorPrimeraActualizacion, fechaUltimoIndiceActualizacion} = getActualizacion(dataIndice, cadencia, fechaInicioContrato, precio, indice);
+        let fechaPagoActualizacion =  ajustarFechaPorMes(fechaInicioContrato, cadencia)
+        let data = { valorPrimeraActualizacion, fechaUltimoIndiceActualizacion, fechaPagoActualizacion,  dataIndice, dataAlquiler, ...prospecto }
         const responseBody = JSON.stringify(data);
         const encryptedBody = encryptResponse(responseBody);
         return { data: encryptedBody };

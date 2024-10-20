@@ -33,14 +33,8 @@ const testZbody = async (req, res, criteria) => {
 //---------------------PAGES----------------------------
 router.use('/', express.static(path.join(__dirname, '..', 'static', 'landing')));
 router.use(express.static(path.join(__dirname, '..', 'static', 'build')));
-router.get('/reset-password/*', (req, res) => res.sendFile(path.join(__dirname, '..', 'static', 'build', 'index.html')));
 router.get('/dashboard/*', (req, res) => res.sendFile(path.join(__dirname, '..', 'static', 'build', 'index.html')));
 router.get('/dashboard', (req, res) => res.sendFile(path.join(__dirname, '..', 'static', 'build', 'index.html')));
-router.get('/login', (req, res) => res.sendFile(path.join(__dirname, '..', 'static', 'build', 'index.html')));
-router.get('/redirect/*', (req, res) => res.sendFile(path.join(__dirname, '..', 'static', 'build', 'index.html')));
-//router.use('^(?!/api)\w+$', express.static(path.join(__dirname, '..', 'static', 'build')));
-//router.get('/landing', (req, res) => res.sendFile(path.join(__dirname, '..', 'static', 'landing', 'index.html'))); //Landing
-//router.get('^(?!/api)\w+$', (req, res) => res.sendFile(path.join(__dirname, '..', 'static', 'portal', 'index.html'))); //Portal
 
 router.all('', async (req, res, next) => {
   res.status(400).body = "Invalid path!";
