@@ -46,6 +46,51 @@ const getPromedioComuna = (tiempo, comunaId, comunas) => {
     }
     // console.log({valor})
     return valor
+};
+const getValores = (arr, cantAmb, barriosXComuna, comunasTriAmb) => {
+    let barrios = barriosXComuna?.reduce((acc, x) => [...acc, ...x.barrios], [])
+    let barriosFaltantes = barrios?.filter(b => !arr.map(x => x.Barrio)?.includes(b))?.map(b => {
+        let init = { ...arr[0] };
+        delete init?.Barrio
+        Object.keys(init).forEach(key => {init[key] = ''});
+        return ({
+            ...init,
+            Barrio: b
+        })
+    });
+    console.log('Cant Barrios: ', barrios?.length)
+    console.log('Cant Barrios Faltantes: ', barriosFaltantes?.length)
+    console.log({barriosFaltantes})
+    let barriosCampletos = [...arr]?.concat(barriosFaltantes)
+    console.log('Cant Barrios Completos: ', barriosCampletos?.length)
+    let res = barriosCampletos?.map((b, i, arr) => {
+        let barrio = b.Barrio;
+        let serie = { ...b }
+        delete serie.Barrio
+        // Recorrer las propiedades del objeto `serie` usando Object.keys()
+        Object.keys(serie).forEach(key => {
+            if (serie[key] === '') {
+                //      "03-2022": "55000",
+                let comuna = barriosXComuna?.find(b => b.barrios?.includes(barrio))
+                if (comuna) {
+                    let tiempo = getMesAnio(key);
+                    let promedioBarrios = getPromediosBarrios(key, comuna?.barrios, arr)
+                    if (promedioBarrios > 0) {
+                        serie[key] = promedioBarrios;
+                    } else {
+                        let promedioComuna = getPromedioComuna(tiempo, comuna?.comuna, comunasTriAmb[`comunasTriAmb${cantAmb}`]);
+                        serie[key] = promedioComuna;
+                    }
+                }
+            } else { serie[key] = parseFloat(serie[key]) }
+        });
+        return ({
+            ...serie,
+            barrio
+        })
+    });
+
+    return res
 }
 async function writeData(data, name) {
     try {
@@ -74,92 +119,96 @@ async function main() {
         comunasTriAmb = JSON.parse(dataComunasTriAmb);
         const dataBarrios = await fs.readFile('./datosLimpios/barriosXComuna.json', 'utf8');
         barriosXComuna = JSON.parse(dataBarrios);
-
         const data3 = await fs.readFile('./ambientes3.json', 'utf8');
         amb3 = JSON.parse(data3);
-        amb3Mensual = [...amb3].map((b, i, arr) => {
-            let barrio = b.Barrio;
-            let serie = { ...b }
-            delete serie.Barrio
-            // Recorrer las propiedades del objeto `serie` usando Object.keys()
-            Object.keys(serie).forEach(key => {
-                if (serie[key] === '') {
-                    //      "03-2022": "55000",
-                    let comuna = barriosXComuna?.find(b => b.barrios?.includes(barrio))
-                    if (comuna) {
-                        let tiempo = getMesAnio(key);
-                        let promedioBarrios = getPromediosBarrios(key, comuna?.barrios, amb3)
-                        if (promedioBarrios > 0) {
-                            serie[key] = promedioBarrios;
-                        } else {
-                            let promedioComuna = getPromedioComuna(tiempo, comuna?.comuna, comunasTriAmb?.comunasTriAmb3);
-                            serie[key] = promedioComuna;
-                        }
-                    }
-                } else { serie[key] = parseFloat(serie[key]) }
-            });
-            return ({
-                ...serie,
-                barrio
-            })
-        });
+        // let prueba = getValores(amb3,3, barriosXComuna,comunasTriAmb);
+        // await writeData(prueba, 'prueba3.json');
+        amb3Mensual = getValores(amb3,3, barriosXComuna,comunasTriAmb);
+        // [...amb3].map((b, i, arr) => {
+        //     let barrio = b.Barrio;
+        //     let serie = { ...b }
+        //     delete serie.Barrio
+        //     // Recorrer las propiedades del objeto `serie` usando Object.keys()
+        //     Object.keys(serie).forEach(key => {
+        //         if (serie[key] === '') {
+        //             //      "03-2022": "55000",
+        //             let comuna = barriosXComuna?.find(b => b.barrios?.includes(barrio))
+        //             if (comuna) {
+        //                 let tiempo = getMesAnio(key);
+        //                 let promedioBarrios = getPromediosBarrios(key, comuna?.barrios, amb3)
+        //                 if (promedioBarrios > 0) {
+        //                     serie[key] = promedioBarrios;
+        //                 } else {
+        //                     let promedioComuna = getPromedioComuna(tiempo, comuna?.comuna, comunasTriAmb?.comunasTriAmb3);
+        //                     serie[key] = promedioComuna;
+        //                 }
+        //             }
+        //         } else { serie[key] = parseFloat(serie[key]) }
+        //     });
+        //     return ({
+        //         ...serie,
+        //         barrio
+        //     })
+        // });
         const data2 = await fs.readFile('./ambientes2.json', 'utf8');
         amb2 = JSON.parse(data2);
-        amb2Mensual = [...amb2].map((b, i, arr) => {
-            let barrio = b.Barrio;
-            let serie = { ...b }
-            delete serie.Barrio
-            // Recorrer las propiedades del objeto `serie` usando Object.keys()
-            Object.keys(serie).forEach(key => {
-                if (serie[key] === '') {
-                    //      "03-2022": "55000",
-                    let comuna = barriosXComuna?.find(b => b.barrios?.includes(barrio))
-                    if (comuna) {
-                        let tiempo = getMesAnio(key);
-                        let promedioBarrios = getPromediosBarrios(key, comuna?.barrios, amb2)
-                        if (promedioBarrios > 0) {
-                            serie[key] = promedioBarrios;
-                        } else {
-                            let promedioComuna = getPromedioComuna(tiempo, comuna?.comuna, comunasTriAmb?.comunasTriAmb2);
-                            serie[key] = promedioComuna;
-                        }
-                    }
-                } else { serie[key] = parseFloat(serie[key]) }
-            });
-            return ({
-                ...serie,
-                barrio
-            })
-        });
+        amb2Mensual = getValores(amb2,2, barriosXComuna,comunasTriAmb);
+        // [...amb2].map((b, i, arr) => {
+        //     let barrio = b.Barrio;
+        //     let serie = { ...b }
+        //     delete serie.Barrio
+        //     // Recorrer las propiedades del objeto `serie` usando Object.keys()
+        //     Object.keys(serie).forEach(key => {
+        //         if (serie[key] === '') {
+        //             //      "03-2022": "55000",
+        //             let comuna = barriosXComuna?.find(b => b.barrios?.includes(barrio))
+        //             if (comuna) {
+        //                 let tiempo = getMesAnio(key);
+        //                 let promedioBarrios = getPromediosBarrios(key, comuna?.barrios, amb2)
+        //                 if (promedioBarrios > 0) {
+        //                     serie[key] = promedioBarrios;
+        //                 } else {
+        //                     let promedioComuna = getPromedioComuna(tiempo, comuna?.comuna, comunasTriAmb?.comunasTriAmb2);
+        //                     serie[key] = promedioComuna;
+        //                 }
+        //             }
+        //         } else { serie[key] = parseFloat(serie[key]) }
+        //     });
+        //     return ({
+        //         ...serie,
+        //         barrio
+        //     })
+        // });
 
         const data1 = await fs.readFile('./ambientes1.json', 'utf8');
         amb1 = JSON.parse(data1);
-        amb1Mensual = [...amb1].map((b, i, arr) => {
-            let barrio = b.Barrio;
-            let serie = { ...b }
-            delete serie.Barrio
-            // Recorrer las propiedades del objeto `serie` usando Object.keys()
-            Object.keys(serie).forEach(key => {
-                if (serie[key] === '') {
-                    //      "03-2022": "55000",
-                    let comuna = barriosXComuna?.find(b => b.barrios?.includes(barrio))
-                    if (comuna) {
-                        let tiempo = getMesAnio(key);
-                        let promedioBarrios = getPromediosBarrios(key, comuna?.barrios, amb1)
-                        if (promedioBarrios > 0) {
-                            serie[key] = promedioBarrios;
-                        } else {
-                            let promedioComuna = getPromedioComuna(tiempo, comuna?.comuna, comunasTriAmb?.comunasTriAmb1);
-                            serie[key] = promedioComuna;
-                        }
-                    }
-                } else { serie[key] = parseFloat(serie[key]) }
-            });
-            return ({
-                ...serie,
-                barrio
-            })
-        });
+        amb1Mensual = getValores(amb1,1, barriosXComuna,comunasTriAmb);
+        // [...amb1].map((b, i, arr) => {
+        //     let barrio = b.Barrio;
+        //     let serie = { ...b }
+        //     delete serie.Barrio
+        //     // Recorrer las propiedades del objeto `serie` usando Object.keys()
+        //     Object.keys(serie).forEach(key => {
+        //         if (serie[key] === '') {
+        //             //      "03-2022": "55000",
+        //             let comuna = barriosXComuna?.find(b => b.barrios?.includes(barrio))
+        //             if (comuna) {
+        //                 let tiempo = getMesAnio(key);
+        //                 let promedioBarrios = getPromediosBarrios(key, comuna?.barrios, amb1)
+        //                 if (promedioBarrios > 0) {
+        //                     serie[key] = promedioBarrios;
+        //                 } else {
+        //                     let promedioComuna = getPromedioComuna(tiempo, comuna?.comuna, comunasTriAmb?.comunasTriAmb1);
+        //                     serie[key] = promedioComuna;
+        //                 }
+        //             }
+        //         } else { serie[key] = parseFloat(serie[key]) }
+        //     });
+        //     return ({
+        //         ...serie,
+        //         barrio
+        //     })
+        // });
         await writeData(amb1Mensual, 'amb1Mensual.json');
         await writeData(amb2Mensual, 'amb2Mensual.json');
         await writeData(amb3Mensual, 'amb3Mensual.json');

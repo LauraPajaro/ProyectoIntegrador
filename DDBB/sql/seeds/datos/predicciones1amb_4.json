@@ -1,0 +1,1652 @@
+[
+    {
+        "barrio": "Almagro",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 390417.4735534308,
+                "valorMin": 352173.82042814384,
+                "valorMax": 428661.1266787178
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 350689.4220088608,
+                "valorMin": 310774.66107170034,
+                "valorMax": 390604.18294602126
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 422731.4347733157,
+                "valorMin": 372677.75672564795,
+                "valorMax": 472785.1128209834
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 364362.7761011395,
+                "valorMin": 311471.53634844156,
+                "valorMax": 417254.0158538374
+            }
+        ],
+        "mae": 20825.44329486572,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Balvanera",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 312365.0,
+                "valorMin": 272508.0722884099,
+                "valorMax": 352221.9277115901
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 312365.0,
+                "valorMin": 255998.79227574525,
+                "valorMax": 368731.20772425475
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 298500.0,
+                "valorMin": 229465.77616992602,
+                "valorMax": 367534.22383007396
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 333500.0,
+                "valorMin": 253786.1445768198,
+                "valorMax": 413213.8554231802
+            }
+        ],
+        "mae": 5250.0,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Barracas",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 243360.8389417558,
+                "valorMin": 177149.57636239263,
+                "valorMax": 309572.10152111895
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 246822.71797380823,
+                "valorMin": 153185.85245222668,
+                "valorMax": 340459.5834953898
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 247032.07663856895,
+                "valorMin": 132350.80581782802,
+                "valorMax": 361713.34745930985
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 279012.4258396117,
+                "valorMin": 146589.90068088536,
+                "valorMax": 411434.950998338
+            }
+        ],
+        "mae": 42595.75,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Barrio Norte",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 309165.8774656064,
+                "valorMin": 258219.02099694998,
+                "valorMax": 360112.73393426277
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 297212.6732054729,
+                "valorMin": 245378.41545257682,
+                "valorMax": 349046.93095836893
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 296578.5686091049,
+                "valorMin": 243262.86282690265,
+                "valorMax": 349894.27439130715
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 324848.1769559304,
+                "valorMin": 261043.5198352683,
+                "valorMax": 388652.8340765926
+            }
+        ],
+        "mae": 30378.859701191053,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Belgrano",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 329542.8556025241,
+                "valorMin": 287047.15238178405,
+                "valorMax": 372038.5588232642
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 319000.80552698066,
+                "valorMin": 273973.72891472,
+                "valorMax": 364027.8821392413
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 338881.7718089913,
+                "valorMin": 283160.61118957435,
+                "valorMax": 394602.9324284083
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 333429.63924033445,
+                "valorMin": 273822.5023396534,
+                "valorMax": 393036.7761410155
+            }
+        ],
+        "mae": 32130.297654122587,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Boedo",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 346272.76793263183,
+                "valorMin": 289893.82558836584,
+                "valorMax": 402651.7102768978
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 336272.76793263183,
+                "valorMin": 269234.47202124505,
+                "valorMax": 403311.0638440186
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 373772.76793263183,
+                "valorMin": 297551.5038552942,
+                "valorMax": 449994.03200996947
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 353772.76793263183,
+                "valorMin": 269361.6959314315,
+                "valorMax": 438183.8399338322
+            }
+        ],
+        "mae": 44138.0372608733,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Caballito",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 312500.0,
+                "valorMin": 272633.9884037225,
+                "valorMax": 352366.0115962775
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 346250.0,
+                "valorMin": 289870.9457228213,
+                "valorMax": 402629.0542771787
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 353750.0,
+                "valorMin": 284700.04242011736,
+                "valorMax": 422799.95757988264
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 352500.0,
+                "valorMin": 272767.97680744505,
+                "valorMax": 432232.02319255495
+            }
+        ],
+        "mae": 11883.016132432254,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Microcentro",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 0.0,
+                "valorMin": null,
+                "valorMax": null
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 0.0,
+                "valorMin": null,
+                "valorMax": null
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 0.0,
+                "valorMin": null,
+                "valorMax": null
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 0.0,
+                "valorMin": null,
+                "valorMax": null
+            }
+        ],
+        "mae": 21591.963635827917,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Chacarita",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 320788.30358937534,
+                "valorMin": 235713.0444709101,
+                "valorMax": 405863.5627078406
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 327288.30361496494,
+                "valorMin": 220428.27935968322,
+                "valorMax": 434148.32787024666
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 325788.30383942206,
+                "valorMin": 200887.02291512134,
+                "valorMax": 450689.5847637228
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 334288.30411944515,
+                "valorMin": 193641.24568487826,
+                "valorMax": 474935.36255401204
+            }
+        ],
+        "mae": 49423.96500976869,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Coghlan",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 335700.96217282163,
+                "valorMin": 292110.0439830304,
+                "valorMax": 379291.88036261284
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 326682.8314536307,
+                "valorMin": 276788.99213885365,
+                "valorMax": 376576.67076840776
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 354997.7250180593,
+                "valorMin": 295269.3867710321,
+                "valorMax": 414726.0632650865
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 355190.5384749786,
+                "valorMin": 288776.37431724934,
+                "valorMax": 421604.70263270783
+            }
+        ],
+        "mae": 18631.540740346827,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Colegiales",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 356743.7488263679,
+                "valorMin": 307437.01273482764,
+                "valorMax": 406050.48491790815
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 370973.3642509464,
+                "valorMin": 321282.62571418966,
+                "valorMax": 420664.1027877031
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 380954.5787988734,
+                "valorMin": 328323.68575275346,
+                "valorMax": 433585.47184499336
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 345988.22677308193,
+                "valorMin": 285003.08565289574,
+                "valorMax": 406973.3678932681
+            }
+        ],
+        "mae": 7200.927563199395,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Constitución",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 290185.19044149684,
+                "valorMin": 239293.4770224311,
+                "valorMax": 341076.9038605626
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 294336.07153159834,
+                "valorMin": 240916.85287370055,
+                "valorMax": 347755.2901894961
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 306161.085339193,
+                "valorMin": 239529.31570015755,
+                "valorMax": 372792.85497822845
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 290192.1917037896,
+                "valorMin": 219444.65973410406,
+                "valorMax": 360939.7236734751
+            }
+        ],
+        "mae": 36507.1348175282,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Flores",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 313195.426138916,
+                "valorMin": 271695.56145299814,
+                "valorMax": 354695.29082483385
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 310350.426138916,
+                "valorMin": 256706.2366186149,
+                "valorMax": 363994.6156592171
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 360695.426138916,
+                "valorMin": 297188.2661517896,
+                "valorMax": 424202.5861260424
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 350695.426138916,
+                "valorMin": 278663.35224144335,
+                "valorMax": 422727.50003638864
+            }
+        ],
+        "mae": 17250.0,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Floresta",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 257468.34795903097,
+                "valorMin": 217285.11078687187,
+                "valorMax": 297651.5851311901
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 257469.34981072848,
+                "valorMin": 201533.79624885696,
+                "valorMax": 313404.90337260003
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 257469.3181000775,
+                "valorMin": 189307.6401965092,
+                "valorMax": 325630.9960036458
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 257469.31910378434,
+                "valorMin": 178963.62981016148,
+                "valorMax": 335975.0083974072
+            }
+        ],
+        "mae": 6783.133372734963,
+        "nombreModelo": "SARIMA Simple",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "La Paternal",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 263732.4946757021,
+                "valorMin": 145530.93667872227,
+                "valorMax": 381934.052672682
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 278770.9478044257,
+                "valorMin": 111608.70139146686,
+                "valorMax": 445933.19421738456
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 278960.79479731503,
+                "valorMin": 74229.69081274659,
+                "valorMax": 483691.8987818835
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 311073.5873562776,
+                "valorMin": 74670.47136231794,
+                "valorMax": 547476.7033502373
+            }
+        ],
+        "mae": 49187.50000000001,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Liniers",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 326414.4940738696,
+                "valorMin": 296772.94071753824,
+                "valorMax": 356056.04743020097
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 324995.6659542506,
+                "valorMin": 294150.01336458523,
+                "valorMax": 355841.318543916
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 326411.6017320341,
+                "valorMin": 294406.1512632699,
+                "valorMax": 358417.05220079835
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 370076.06463918043,
+                "valorMin": 336950.5278402749,
+                "valorMax": 403201.60143808596
+            }
+        ],
+        "mae": 21068.140556165396,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Montserrat",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 305152.3160836919,
+                "valorMin": 232936.01310626545,
+                "valorMax": 377368.61906111834
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 357421.06220882916,
+                "valorMin": 284750.0740108933,
+                "valorMax": 430092.050406765
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 444284.301581615,
+                "valorMin": 371090.9746254387,
+                "valorMax": 517477.6285377913
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 298386.869819122,
+                "valorMin": 220394.55493424198,
+                "valorMax": 376379.18470400205
+            }
+        ],
+        "mae": 44645.78725423511,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Monte Castro",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 300979.94792825746,
+                "valorMin": 259691.52455470694,
+                "valorMax": 342268.371301808
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 301011.9578596607,
+                "valorMin": 241659.9841176997,
+                "valorMax": 360363.9316016217
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 301013.0034618594,
+                "valorMin": 227908.02185187384,
+                "valorMax": 374117.985071845
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 301013.03761638305,
+                "valorMin": 216359.96485831367,
+                "valorMax": 385666.11037445243
+            }
+        ],
+        "mae": 17178.16593440988,
+        "nombreModelo": "SARIMA Simple",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Núñez",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 374211.74431009404,
+                "valorMin": 323674.1482125784,
+                "valorMax": 424749.3404076097
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 356856.46411879885,
+                "valorMin": 302348.174470004,
+                "valorMax": 411364.7537675937
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 401667.2797201567,
+                "valorMin": 335009.629582251,
+                "valorMax": 468324.92985806236
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 357841.7803860454,
+                "valorMin": 285667.38856451923,
+                "valorMax": 430016.17220757157
+            }
+        ],
+        "mae": 22500.0,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Palermo",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 289831.10030222026,
+                "valorMin": 239758.498105955,
+                "valorMax": 339903.70249848557
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 289859.62741013034,
+                "valorMin": 224751.23127448483,
+                "valorMax": 354968.02354577585
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 289854.8091902258,
+                "valorMin": 211804.37447147397,
+                "valorMax": 367905.2439089776
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 289855.6229861115,
+                "valorMin": 200839.18560507847,
+                "valorMax": 378872.0603671445
+            }
+        ],
+        "mae": 13841.313204366787,
+        "nombreModelo": "SARIMA Simple",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Parque Chacabuco",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 255501.15781830743,
+                "valorMin": 221888.0515469824,
+                "valorMax": 289114.26408963243
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 254315.26364422424,
+                "valorMin": 206779.13736598924,
+                "valorMax": 301851.3899224592
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 261579.70833330794,
+                "valorMin": 203360.07935676366,
+                "valorMax": 319799.33730985224
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 259786.9069590501,
+                "valorMin": 192560.65053102712,
+                "valorMax": 327013.1633870731
+            }
+        ],
+        "mae": 32562.5,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Parque Patricios",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 241914.68473476294,
+                "valorMin": 190059.95835796453,
+                "valorMax": 293769.41111156135
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 244923.9771134025,
+                "valorMin": 175878.8684212654,
+                "valorMax": 313969.0858055396
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 244383.04878999272,
+                "valorMin": 163802.826489635,
+                "valorMax": 324963.27109035046
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 244169.7835712557,
+                "valorMin": 153015.67358967056,
+                "valorMax": 335323.89355284086
+            }
+        ],
+        "mae": 11123.686084800771,
+        "nombreModelo": "SARIMA Simple",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Puerto Madero",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 313015.3454587537,
+                "valorMin": 276115.25390163163,
+                "valorMax": 349915.43701587577
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 293855.82488952175,
+                "valorMin": 241696.66192370036,
+                "valorMax": 346014.98785534315
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 299718.1728819646,
+                "valorMin": 235846.8976037748,
+                "valorMax": 363589.4481601544
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 248230.1164811018,
+                "valorMin": 174483.92112141236,
+                "valorMax": 321976.31184079126
+            }
+        ],
+        "mae": 27411.85934295476,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Recoleta",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 266191.27399743884,
+                "valorMin": 215262.10487375283,
+                "valorMax": 317120.4431211248
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 264000.8812139324,
+                "valorMin": 203363.26992704294,
+                "valorMax": 324638.4925008219
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 264775.81389305816,
+                "valorMin": 192524.29261320404,
+                "valorMax": 337027.3351729123
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 264501.6527189989,
+                "valorMin": 183313.39119857165,
+                "valorMax": 345689.91423942614
+            }
+        ],
+        "mae": 5668.392406332729,
+        "nombreModelo": "SARIMA Simple",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Retiro",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 280775.89426650957,
+                "valorMin": 195089.41827985228,
+                "valorMax": 366462.3702531669
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 281826.00576271507,
+                "valorMin": 160647.02931042784,
+                "valorMax": 403004.9822150023
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 289045.54725015315,
+                "valorMin": 140632.2173197322,
+                "valorMax": 437458.8771805741
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 299307.3771244874,
+                "valorMin": 127934.42515117288,
+                "valorMax": 470680.32909780194
+            }
+        ],
+        "mae": 35783.75819982744,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Saavedra",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 346596.51105135435,
+                "valorMin": 255643.35402781074,
+                "valorMax": 437549.66807489796
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 346596.51105135435,
+                "valorMin": 245224.75383318315,
+                "valorMax": 447968.26826952555
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 376596.51105135435,
+                "valorMin": 265781.39678235987,
+                "valorMax": 487411.62532034883
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 376596.51105135435,
+                "valorMin": 257081.88458496417,
+                "valorMax": 496111.13751774456
+            }
+        ],
+        "mae": 67625.0,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "San Cristóbal",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 250000.0,
+                "valorMin": 213679.9743127229,
+                "valorMax": 286320.0256872771
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 250000.0,
+                "valorMin": 198635.7270873135,
+                "valorMax": 301364.27291268646
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 250000.0,
+                "valorMin": 187091.87017742931,
+                "valorMax": 312908.12982257066
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 250000.0,
+                "valorMin": 177359.94862544577,
+                "valorMax": 322640.0513745542
+            }
+        ],
+        "mae": 0.0,
+        "nombreModelo": "SARIMA Simple",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "San Nicolás",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 263000.0,
+                "valorMin": 226941.9931404252,
+                "valorMax": 299058.0068595748
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 262000.0,
+                "valorMin": 211006.27766704722,
+                "valorMax": 312993.7223329528
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 243000.0,
+                "valorMin": 180545.70009954937,
+                "valorMax": 305454.2999004506
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 253000.0,
+                "valorMin": 180883.98628085043,
+                "valorMax": 325116.0137191496
+            }
+        ],
+        "mae": 21375.0,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "San Telmo",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 260000.0,
+                "valorMin": 207150.3983256429,
+                "valorMax": 312849.6016743571
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 260000.0,
+                "valorMin": 192560.00460804597,
+                "valorMax": 327439.995391954
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 260000.0,
+                "valorMin": 179385.57755814475,
+                "valorMax": 340614.42244185525
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 260000.0,
+                "valorMin": 168305.67257080297,
+                "valorMax": 351694.32742919703
+            }
+        ],
+        "mae": 27333.563137951314,
+        "nombreModelo": "SARIMA Simple",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Villa Crespo",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 302247.6995803909,
+                "valorMin": 250356.45509358658,
+                "valorMax": 354138.9440671952
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 301742.48424002196,
+                "valorMin": 236084.54328135608,
+                "valorMax": 367400.4251986878
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 301856.04147087736,
+                "valorMin": 223453.07122669622,
+                "valorMax": 380259.01171505847
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 301830.51721686294,
+                "valorMin": 212763.49440368317,
+                "valorMax": 390897.5400300427
+            }
+        ],
+        "mae": 20018.562331091816,
+        "nombreModelo": "SARIMA Simple",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Villa del Parque",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 318811.15166900377,
+                "valorMin": 277586.64010367426,
+                "valorMax": 360035.6632343333
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 329978.1516690038,
+                "valorMin": 276291.9161833164,
+                "valorMax": 383664.38715469127
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 379978.1516690039,
+                "valorMin": 316221.0861197693,
+                "valorMax": 443735.21721823845
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 360478.1516690039,
+                "valorMin": 288037.0381058201,
+                "valorMax": 432919.2652321877
+            }
+        ],
+        "mae": 9685.654992674215,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Villa Devoto",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 335855.0104857811,
+                "valorMin": 294971.11871016456,
+                "valorMax": 376738.9022613977
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 347022.0104857811,
+                "valorMin": 296486.27255187574,
+                "valorMax": 397557.7484196865
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 397022.0104857811,
+                "valorMin": 338402.65352642507,
+                "valorMax": 455641.3674451372
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 377522.0104857811,
+                "valorMin": 311805.97582046944,
+                "valorMax": 443238.0451510928
+            }
+        ],
+        "mae": 14366.184675010962,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Villa Luro",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 250000.0,
+                "valorMin": 210097.6877873977,
+                "valorMax": 289902.3122126023
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 250000.0,
+                "valorMin": 193829.71074777306,
+                "valorMax": 306170.28925222694
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 250000.0,
+                "valorMin": 181310.27994485004,
+                "valorMax": 318689.72005515
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 250000.0,
+                "valorMin": 170744.39200445305,
+                "valorMax": 329255.60799554695
+            }
+        ],
+        "mae": 5539.131839562426,
+        "nombreModelo": "SARIMA Simple",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Villa Pueyrredón",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 269732.34015865566,
+                "valorMin": 233181.02627549815,
+                "valorMax": 306283.65404181316
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 269746.66851678933,
+                "valorMin": 219419.85297385597,
+                "valorMax": 320073.4840597227
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 269745.9014915764,
+                "valorMin": 208616.23341994957,
+                "valorMax": 330875.56956320326
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 269745.94255194574,
+                "valorMin": 199457.28645425552,
+                "valorMax": 340034.59864963597
+            }
+        ],
+        "mae": 11321.27304768558,
+        "nombreModelo": "SARIMA Simple",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Villa Santa Rita",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 294540.9775693971,
+                "valorMin": 238627.02530669022,
+                "valorMax": 350454.9298321039
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 307294.2360833773,
+                "valorMin": 242081.03123168985,
+                "valorMax": 372507.4409350648
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 356660.11263342685,
+                "valorMin": 278821.9384198257,
+                "valorMax": 434498.286847028
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 337413.610122161,
+                "valorMin": 250385.14400579548,
+                "valorMax": 424442.0762385265
+            }
+        ],
+        "mae": 23217.294464475628,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Villa Urquiza",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 280000.0,
+                "valorMin": 249581.9591894393,
+                "valorMax": 310418.0408105607
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 280000.0,
+                "valorMin": 237119.25174252008,
+                "valorMax": 322880.7482574799
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 280000.0,
+                "valorMin": 215937.68969093007,
+                "valorMax": 344062.31030906993
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 280000.0,
+                "valorMin": 200324.56175529922,
+                "valorMax": 359675.4382447008
+            }
+        ],
+        "mae": 16002.281200465528,
+        "nombreModelo": "SARIMA Simple",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Parque Chas",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 296745.02712156,
+                "valorMin": 213446.58844676957,
+                "valorMax": 380043.46579635044
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 311245.02865954663,
+                "valorMin": 216108.70805314317,
+                "valorMax": 406381.3492659501
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 301745.0312510541,
+                "valorMin": 196088.94239961368,
+                "valorMax": 407401.1201024945
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 310245.04050204356,
+                "valorMin": 195025.69002544164,
+                "valorMax": 425464.3909786455
+            }
+        ],
+        "mae": 45052.16780078287,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Villa Ortúzar",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 358348.3502690844,
+                "valorMin": 293921.6873734005,
+                "valorMax": 422775.0131647683
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 382848.35026908445,
+                "valorMin": 309431.95162485255,
+                "valorMax": 456264.74891331635
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 390198.35026908445,
+                "valorMin": 308778.81767460523,
+                "valorMax": 471617.88286356366
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 458848.35026908445,
+                "valorMin": 370144.8385803235,
+                "valorMax": 547551.8619578454
+            }
+        ],
+        "mae": 26893.903315933574,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Parque Avellaneda",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 326414.4940738696,
+                "valorMin": 296772.94071753824,
+                "valorMax": 356056.04743020097
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 324995.6659542506,
+                "valorMin": 294150.01336458523,
+                "valorMax": 355841.318543916
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 326411.6017320341,
+                "valorMin": 294406.1512632699,
+                "valorMax": 358417.05220079835
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 370076.06463918043,
+                "valorMin": 336950.5278402749,
+                "valorMax": 403201.60143808596
+            }
+        ],
+        "mae": 21068.140556165396,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "La Boca",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 244076.99855583918,
+                "valorMin": 175426.59366491967,
+                "valorMax": 312727.4034467587
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 247537.83395548683,
+                "valorMin": 150451.5002963442,
+                "valorMax": 344624.1676146295
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 247747.3744558331,
+                "valorMin": 128841.38522458557,
+                "valorMax": 366653.3636870807
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 280782.1186349855,
+                "valorMin": 143481.30885314647,
+                "valorMax": 418082.92841682455
+            }
+        ],
+        "mae": 42595.75,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Nueva Pompeya",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 244076.99855583918,
+                "valorMin": 175426.59366491967,
+                "valorMax": 312727.4034467587
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 247537.83395548683,
+                "valorMin": 150451.5002963442,
+                "valorMax": 344624.1676146295
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 247747.3744558331,
+                "valorMin": 128841.38522458557,
+                "valorMax": 366653.3636870807
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 280782.1186349855,
+                "valorMin": 143481.30885314647,
+                "valorMax": 418082.92841682455
+            }
+        ],
+        "mae": 42595.75,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Villa Soldati",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 343376.2680392046,
+                "valorMin": 309067.2385147643,
+                "valorMax": 377685.2975636449
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 343897.3343412836,
+                "valorMin": 299257.7819803794,
+                "valorMax": 388536.88670218777
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 343489.8675686318,
+                "valorMin": 287944.0044791831,
+                "valorMax": 399035.7306580804
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 417665.1886539679,
+                "valorMin": 339626.2611923972,
+                "valorMax": 495704.11611553864
+            }
+        ],
+        "mae": 6930.650285770127,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Villa Riachuelo",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 343376.2680392046,
+                "valorMin": 309067.2385147643,
+                "valorMax": 377685.2975636449
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 343897.3343412836,
+                "valorMin": 299257.7819803794,
+                "valorMax": 388536.88670218777
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 343489.8675686318,
+                "valorMin": 287944.0044791831,
+                "valorMax": 399035.7306580804
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 417665.1886539679,
+                "valorMin": 339626.2611923972,
+                "valorMax": 495704.11611553864
+            }
+        ],
+        "mae": 6930.650285770127,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Villa Lugano",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 343376.2680392046,
+                "valorMin": 309067.2385147643,
+                "valorMax": 377685.2975636449
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 343897.3343412836,
+                "valorMin": 299257.7819803794,
+                "valorMax": 388536.88670218777
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 343489.8675686318,
+                "valorMin": 287944.0044791831,
+                "valorMax": 399035.7306580804
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 417665.1886539679,
+                "valorMin": 339626.2611923972,
+                "valorMax": 495704.11611553864
+            }
+        ],
+        "mae": 6930.650285770127,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Mataderos",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 326414.4940738696,
+                "valorMin": 296772.94071753824,
+                "valorMax": 356056.04743020097
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 324995.6659542506,
+                "valorMin": 294150.01336458523,
+                "valorMax": 355841.318543916
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 326411.6017320341,
+                "valorMin": 294406.1512632699,
+                "valorMax": 358417.05220079835
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 370076.06463918043,
+                "valorMin": 336950.5278402749,
+                "valorMax": 403201.60143808596
+            }
+        ],
+        "mae": 21068.140556165396,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Villa Real",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 269089.95830904884,
+                "valorMin": 229667.4447202977,
+                "valorMax": 308512.4718978
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 269090.52774506126,
+                "valorMin": 213545.22275796306,
+                "valorMax": 324635.83273215947
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 269090.523517916,
+                "valorMin": 201144.97727500816,
+                "valorMax": 337036.0697608238
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 269090.5235492957,
+                "valorMin": 190681.89940483446,
+                "valorMax": 347499.14769375697
+            }
+        ],
+        "mae": 6635.8527699461265,
+        "nombreModelo": "SARIMA Simple",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Versalles",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 269089.95830904884,
+                "valorMin": 229667.4447202977,
+                "valorMax": 308512.4718978
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 269090.52774506126,
+                "valorMin": 213545.22275796306,
+                "valorMax": 324635.83273215947
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 269090.523517916,
+                "valorMin": 201144.97727500816,
+                "valorMax": 337036.0697608238
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 269090.5235492957,
+                "valorMin": 190681.89940483446,
+                "valorMax": 347499.14769375697
+            }
+        ],
+        "mae": 6635.8527699461265,
+        "nombreModelo": "SARIMA Simple",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Vélez Sarsfield",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 269089.95830904884,
+                "valorMin": 229667.4447202977,
+                "valorMax": 308512.4718978
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 269090.52774506126,
+                "valorMin": 213545.22275796306,
+                "valorMax": 324635.83273215947
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 269090.523517916,
+                "valorMin": 201144.97727500816,
+                "valorMax": 337036.0697608238
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 269090.5235492957,
+                "valorMin": 190681.89940483446,
+                "valorMax": 347499.14769375697
+            }
+        ],
+        "mae": 6635.8527699461265,
+        "nombreModelo": "SARIMA Simple",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Villa General Mitre",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 314608.21833955834,
+                "valorMin": 275514.240830986,
+                "valorMax": 353702.1958481307
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 330199.855109654,
+                "valorMin": 280335.04751399916,
+                "valorMax": 380064.6627053089
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 376683.44877823663,
+                "valorMin": 314337.7131507811,
+                "valorMax": 439029.18440569215
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 359978.0541052101,
+                "valorMin": 289770.36254840693,
+                "valorMax": 430185.7456620133
+            }
+        ],
+        "mae": 7898.1666666666715,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    },
+    {
+        "barrio": "Agronomía",
+        "predicciones": [
+            {
+                "fecha": "2024-07-01",
+                "valor": 310068.1796457155,
+                "valorMin": 229458.84660900093,
+                "valorMax": 390677.5126824301
+            },
+            {
+                "fecha": "2024-08-01",
+                "valor": 325163.31020215666,
+                "valorMin": 211164.49816778532,
+                "valorMax": 439162.12223652797
+            },
+            {
+                "fecha": "2024-09-01",
+                "valor": 325378.6854588901,
+                "valorMin": 185759.22507506004,
+                "valorMax": 464998.1458427202
+            },
+            {
+                "fecha": "2024-10-01",
+                "valor": 357670.0670838214,
+                "valorMin": 196451.40101039223,
+                "valorMax": 518888.73315725056
+            }
+        ],
+        "mae": 29739.667800782867,
+        "nombreModelo": "SARIMA Estacional",
+        "steps": 4,
+        "ultimaFechaEntrenamiento": "2024-06-01"
+    }
+]

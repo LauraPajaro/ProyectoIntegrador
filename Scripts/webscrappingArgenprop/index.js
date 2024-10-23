@@ -1,85 +1,60 @@
 import puppeteer from 'puppeteer';
-import fs from 'fs';
-
+import { promises as fs } from 'fs';
+import path from 'path';
+const meses = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
 let now = new Date()
-async function openWebPage() {
-    const browser = await puppeteer.launch({ headless: 'new', slowMo: 200 });
-    const page = await browser.newPage();
+async function writeData(data, name) {
+    try {
+        // Asegurarse de que el directorio './datosLimpios' exista
+        const directoryPath = './datosAlquiler';
+        // await fs.mkdir(directoryPath, { recursive: true }); // Crea el directorio si no existe
 
-    await page.goto('https://www.argenprop.com/departamentos/alquiler/capital-federal?orden-masnuevos', {
-        waitUntil: 'networkidle0'
-    });
-    // Guarda el contenido de la página en un archivo para inspección
-    const content = await page.content();
-    fs.writeFile('pageContent.txt', content, (err) => {
-        if (err) {
-            console.error('Error al guardar el contenido de la página:', err);
-        } else {
-            console.log('Contenido de la página guardado en pageContent.txt');
-        }
-    });
+        // Ruta del archivo donde se escribirá la data
+        const filePath = path.join(directoryPath, name);
 
-    await browser.close();
+        // Convertir el objeto a una cadena JSON
+        data = JSON.stringify(data, null, 2); // null, 2 para un formato legible
+
+        // Escribir el archivo
+        await fs.writeFile(filePath, data, 'utf8');
+
+        console.log('Archivo ' + name + 'escrito exitosamente en:', filePath);
+    } catch (error) {
+        await fs.writeFile(filePath, data, 'utf8');
+        console.error('Error al escribir el archivo' + name + ':', error);
+    }
+}
+function handleString(str) {
+    str = str.replaceAll('á', 'a')
+    str = str.replaceAll('Á', 'A')
+    str = str.replaceAll('é', 'e')
+    str = str.replaceAll('É', 'E')
+    str = str.replaceAll('í', 'i')
+    str = str.replaceAll('Í', 'I')
+    str = str.replaceAll('ó', 'o')
+    str = str.replaceAll('Ó', 'O')
+    str = str.replaceAll('ú', 'u')
+    str = str.replaceAll('Ú', 'U')
+    str = str.replaceAll('Ü', 'U')
+    str = str.replaceAll('ü', 'u')
+    str = str.replaceAll("'", '')
+    str = str.replaceAll('`', '');
+    str = str.replaceAll('´', '');
+    str = str.toLowerCase();
+    return str
 };
-async function captureScreenshot() {
-    const browser = await puppeteer.launch({ headless: 'new' });
-    const page = await browser.newPage();
-
-    await page.goto('https://www.argenprop.com/departamentos/alquiler/capital-federal?orden-masnuevos', {
-        waitUntil: 'networkidle0'
-    });
-    await page.screenshot({ path: 'example.png' })
-    await browser.close();
-};
-//openWebPage();
-//captureScreenshot()
-
-async function navigateToNextPage() {
-    const browser = await puppeteer.launch({ headless: 'new' });
-    const page = await browser.newPage();
-
-    await page.goto('https://www.argenprop.com/departamentos/alquiler/capital-federal?orden-masnuevos', {
-        waitUntil: 'networkidle0',
-        timeout: 60000 // Aumentar el timeout a 60 segundos
-    });
-    await page.screenshot({ path: 'nextPage1.png' });
-    // Guarda el contenido de la página en un archivo para inspección
-    const content = await page.content();
-    fs.writeFile('pageContent.txt', content, (err) => {
-        if (err) {
-            console.error('Error al guardar el contenido de la página:', err);
-        } else {
-            console.log('Contenido de la página guardado en pageContent.txt');
-        }
-    });
-
-    // Selector para el botón "Siguiente"
-    const nextButtonSelector = 'li.pagination__page-next.pagination__page > a[aria-label="Siguiente"]';
-
-    // Espera a que el botón "Siguiente" esté disponible
-    await page.waitForSelector(nextButtonSelector, { timeout: 10000 });
-
-    // Haz clic en el botón "Siguiente"
-    await page.click(nextButtonSelector);
-
-    // Espera a que la URL cambie y a que el contenido de la página se actualice
-    await page.waitForFunction('document.querySelector("li.pagination__page--current").innerText !== "1"', { timeout: 60000 });
-
-    // Guarda una captura de pantalla de la página siguiente
-    await page.screenshot({ path: 'nextPage2.png' });
-
-    await browser.close();
-};
-
+const cantAmb = [1, 2, 3]
 //navigateToNextPage();
-async function getDataFromPage() {
+async function getDataFromPage(amb, barrio) {
     const browser = await puppeteer.launch({ headless: 'new' });
     const page = await browser.newPage();
     let results = [];
-
-    for (let i = 1; i <= 20; i++) {
+    amb = amb === 1 ? 'monoambiente' : amb;
+    barrio = handleString(barrio)?.toLowerCase().replaceAll(' ','-');
+    for (let i = 1; i <= 10; i++) {
+        console.log(`Página ${i}`)
         // Navega a la página correspondiente
-        await page.goto(`https://www.argenprop.com/departamentos/alquiler/capital-federal?orden-masnuevos&pagina-${i}`, {
+        await page.goto(`https://www.argenprop.com/casas-o-departamentos-o-ph/alquiler/${barrio}/${amb}?orden-masnuevos&pagina-${i}`, {
             waitUntil: 'networkidle0',
             timeout: 60000 // Aumentar el timeout a 60 segundos
         });
@@ -140,18 +115,37 @@ async function getDataFromPage() {
         results = results.concat(pageResults);
         console.log(`Datos extraídos de la página ${i}`);
     }
-
-    fs.writeFile('result.json', JSON.stringify(results, null, 2), (err) => {
-        if (err) {
-            console.error('Error al guardar el contenido de la página:', err);
-        } else {
-            console.log('Contenido de todas las páginas guardado en result.json');
-        }
-    });
-
     await browser.close();
+    return results
 }
-
-
-openWebPage()
-getDataFromPage();
+async function main() {
+    let barriosXComuna
+    const dataBarrios = await fs.readFile('./barriosXComuna.json', 'utf8');
+    barriosXComuna = JSON.parse(dataBarrios);
+    const barrios = barriosXComuna?.reduce((acc, x) => [...acc, ...x.barrios], [])
+    let results = { 
+        amb1: [],
+        amb2:[],
+        amb3: []
+    };
+    for (let amb of cantAmb) {
+        let ambResults = []
+        for (let barrio of barrios) {
+            console.log(`Consiguiendo los datos de ${amb} Ambiente${amb > 1 ? '' : 's ' } para el barrio ${barrio?.toUpperCase()}:`)
+            try {
+                let datos  = await getDataFromPage(amb, barrio);
+                if (datos?.length === 0) {
+                    console.log(`Datos vacios.`)
+                }
+                results[`amb${amb}`].push(({barrio, datos}))
+                ambResults.push({ barrio, datos, amb });
+            } catch (error) {
+                console.log(`Falló la recolección de datos.`)
+            }
+        }
+           // Crear el archivo por cada ambiente al finalizar el ciclo
+           await writeData(ambResults, `amb${amb}_Mes_${meses[now?.getMonth()]}.json`);
+    }
+    await writeData(results, `ambYbarrios_Mes_${meses[now?.getMonth()]}.json`);
+}
+main()

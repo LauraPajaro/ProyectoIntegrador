@@ -70,7 +70,12 @@ export default {
                         fontWeight: 'bold' // Cambia a 'bold', 700, 600, etc., según prefieras
                     }
                 }
-            }
+            },
+            MuiStack: {
+                defaultProps: {
+                    useFlexGap: true,
+                },
+            },
         }
     }
 }; 

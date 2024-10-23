@@ -1,0 +1,126 @@
+[
+  {
+    "comuna": 1,
+    "barrios": [
+      "Retiro",
+      "San Nicolás",
+      "Puerto Madero",
+      "San Telmo",
+      "Monserrat",
+      "Constitución",
+      "Microcentro"
+    ]
+  },
+  {
+    "comuna": 2,
+    "barrios": [
+      "Recoleta"
+    ]
+  },
+  {
+    "comuna": 3,
+    "barrios": [
+      "Balvanera",
+      "San Cristóbal"
+    ]
+  },
+  {
+    "comuna": 4,
+    "barrios": [
+      "Boca",
+      "Barracas",
+      "Parque Patricios",
+      "Pompeya"
+    ]
+  },
+  {
+    "comuna": 5,
+    "barrios": [
+      "Almagro",
+      "Boedo"
+    ]
+  },
+  {
+    "comuna": 6,
+    "barrios": [
+      "Caballito"
+    ]
+  },
+  {
+    "comuna": 7,
+    "barrios": [
+      "Flores",
+      "Parque Chacabuco"
+    ]
+  },
+  {
+    "comuna": 8,
+    "barrios": [
+      "Villa Soldati",
+      "Villa Riachuelo",
+      "Villa Lugano"
+    ]
+  },
+  {
+    "comuna": 9,
+    "barrios": [
+      "Liniers",
+      "Mataderos",
+      "Parque Avellaneda"
+    ]
+  },
+  {
+    "comuna": 10,
+    "barrios": [
+      "Villa Real",
+      "Monte Castro",
+      "Versalles",
+      "Floresta",
+      "Vélez Sarsfield",
+      "Villa Luro"
+    ]
+  },
+  {
+    "comuna": 11,
+    "barrios": [
+      "Villa General Mitre",
+      "Villa Devoto",
+      "Villa del Parque",
+      "Villa Santa Rita"
+    ]
+  },
+  {
+    "comuna": 12,
+    "barrios": [
+      "Coghlan",
+      "Saavedra",
+      "Villa Urquiza",
+      "Villa Pueyrredón"
+    ]
+  },
+  {
+    "comuna": 13,
+    "barrios": [
+      "Núñez",
+      "Belgrano",
+      "Colegiales"
+    ]
+  },
+  {
+    "comuna": 14,
+    "barrios": [
+      "Palermo"
+    ]
+  },
+  {
+    "comuna": 15,
+    "barrios": [
+      "Chacarita",
+      "Villa Crespo",
+      "Paternal",
+      "Villa Ortúzar",
+      "Agronomía",
+      "Parque Chas"
+    ]
+  }
+]

@@ -1,7 +1,7 @@
 /* App.css */
 .container {
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
     background: radial-gradient(ellipse at bottom, var(--grey-900) 0%, var(--grey-900) 100%);
     overflow: hidden;
 }

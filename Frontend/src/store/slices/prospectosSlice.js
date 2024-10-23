@@ -12,7 +12,16 @@ const initialState = {
     fetching: 0,
     error: null,
     message: null,
-    data: {}
+    data: {},
+    form: {
+        "indice": "ipc",
+        "barrio": null,
+        "precio": 0,
+        "cadencia": 3,
+        "cantidadAmb": 1,
+        "mes": new Date().getMonth(),
+        "anio": new Date().getFullYear()
+    }
 };
 
 // Definir el slice con builder callback en extraReducers
@@ -23,6 +32,16 @@ const prospectosSlice = createSlice({
         cleanError: (state) => ({ ...state, error: null }),
         cleanMessage: (state) => ({ ...state, message: null }),
         resetData: () => ({ ...initialState }),
+        changeForm: (state, action) => {
+            const { property, value } = action.payload; // Desestructurar el payload
+            return {
+                ...state,
+                form: {
+                    ...state.form,
+                    [property]: value // Actualizar la propiedad específica
+                }
+            };
+        }
     },
     extraReducers: (builder) => {
         builder
@@ -43,5 +62,5 @@ const prospectosSlice = createSlice({
 });
 
 // Exportar las acciones y el reducer
-export const { cleanError, cleanMessage, resetData } = prospectosSlice.actions;
+export const { cleanError, cleanMessage, resetData, changeForm } = prospectosSlice.actions;
 export default prospectosSlice.reducer;

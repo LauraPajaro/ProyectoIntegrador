@@ -125,6 +125,7 @@ export default {
         //----------------------------------- DATOS PROMEDIO ALQUILER
         let tipoPrediccionAlquiler = await sql.find(tiposPrediccion, t => t.nombre === `alquileres${cantidadAmb}Amb`);
         let barrioId = await sql.find(barrios, b => b.nombre === barrio)
+        console.log({barrioId})
         let historicoAlquiler = await sql.get(`alquileres${cantidadAmb}Amb`, i => compararFechasPorMesYAnio(i.fecha, fechaInicioContrato, '>=') && i.barrioId === barrioId?.barrioId);
         historicoAlquiler.sort((a, b) => new Date(a.fecha) - new Date(b.fecha));
         let modeloAlquiler = allModelos?.filter(m => m.tipoPrediccionId === tipoPrediccionAlquiler?.tipoPrediccionId && barrioId?.barrioId === m.barrioId)

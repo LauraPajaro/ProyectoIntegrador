@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 
-import { Avatar, Badge, Button, IconButton, Stack, Typography, } from '@mui/material';
 import {
-    Add, AddBusiness, AdminPanelSettings, AttachEmail, AttachFile, AttachMoney, Check, Close, CreditCard, Comment, ContactMail, Delete, Event, Folder, History,
-    Notifications as NotificationIcon, LocalActivity, Person, Receipt, Refresh, Timeline, Edit, Note, MoreHoriz,
-    Visibility, LocationCity, Logout,
-} from '@mui/icons-material';
+    Avatar, Badge, Breadcrumbs, CardActions, CardContent, CardMedia, Collapse, CircularProgress, Dialog, DialogActions, DialogContent, Divider, IconButton, DialogContentText,
+    DialogTitle, Tab, Tabs, TextField, Typography, Tooltip, Popper, Fade, Link, List, ListItem, ListItemButton, ListSubheader,
+    ListItemIcon, ListItemText, ListItemAvatar
+} from '@mui/material';
+import { Autocomplete, Box, Button, ButtonGroup, Card, Chip, FormControl, Input, InputAdornment, MenuItem, Select, Stack, Slider, OutlinedInput, Paper, } from '@mui/material';
+import Grid from '@mui/material/Grid2';
 import './Dashboard.css';
 
 import FormProspecto from "./FormProspecto/FormProspecto.jsx";
@@ -21,13 +22,16 @@ const Dashboard = (props) => {
 
     const Main = () => {
 
-        return <div children={<><FormProspecto /><ResultadosConsulta/></>} />
+        return <Grid container spacing={2}>
+            <Grid size={5} children={<FormProspecto />} />
+            <Grid size={7} children={<ResultadosConsulta />} />
+        </Grid>
     };
 
     return (
-            <div className="container">
-                <Main />
-            </div>)
+        <div className="container">
+            <Main />
+        </div>)
 }
 
 // export default withAuthenticationRequired(Dashboard, { onRedirecting: () => <h1>Redirecting</h1> });
